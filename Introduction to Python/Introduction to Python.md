@@ -185,3 +185,5 @@ Python supports a wide range of data types for different kinds of data storage.
 - **None**: Represents the absence of value
 
 ---
+
+- [Datatypes](./DataTypes.md)

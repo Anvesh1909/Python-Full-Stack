@@ -1,5 +1,5 @@
 #upper case
-A1b = 1001
+ABC = 1001
 print("ABC is :", ABC)
 print()
 print("Address is :", id(ABC))
