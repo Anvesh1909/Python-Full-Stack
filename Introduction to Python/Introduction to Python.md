@@ -66,20 +66,6 @@ print("This is a Python script.")
 - **Script Example**: [Script Code](./ScriptingLanguage.py)
 
 ---
-
-### **The `id()` Function**
-
-The `id()` function is predefined in Python and provides the memory address where the variable's data is stored.
-
-```python
-a = 1001
-print(a)
-print(id(a))
-```
-
-- **Example Code**: [Address ID Function Code](./Address.py)
-
----
 #### 30-10-2024
 ### **Difference Between Java and Python Programming Languages**
 
@@ -97,18 +83,13 @@ print(id(a))
      print(type(a))  # Output: <class 'int'>
      ```
 
-### **The `type()` Function**
-This predefined function returns the data type of a variable.
-
-- **Example Code**: [Type Function Code](./TypeFunction.py)
-
 ---
 
-### **Identifiers and Variables in Python**
+# **Identifiers and Variables in Python**
 
 Identifiers, also known as variables, are names given to values in Python code.
 
-#### **Rules for Writing Identifiers:**
+## **Rules for Writing Identifiers:**
 1. Use characters from A-Z, a-z, 0-9, and the underscore (`_`) character.
    - Only `_` is allowed as a special character in identifiers.
 2. Identifiers cannot start with a number.
@@ -151,21 +132,29 @@ print(keyword.kwlist)
 
 ---
 
-### **Software Development Life Cycle (SDLC)**
+# **Software Development Life Cycle (SDLC)**
 1. **Development Phase**: Writing and designing the code.
 2. **Testing Phase**: Verifying that the code functions as expected.
 
 ---
 
-### **Assignment 1: Identifiers**
+# **Assignment 1: Identifiers**
 1. **Task 1**: Write 15 examples of valid Python identifiers using the above rules.
 2. **Task 2**: Write 15 examples of invalid Python identifiers.
 
-- **code :** [Assignment 1](./Assignment1.py)
+- **code :** [Assignment 1](./Assignments/Assignment1.py)
 
 ---
 
-### **Data Types in Python**
+# input function
+it is a predefined function in python. the main objective of input() is to read the data dynammically values from keyword. while reading any data / information by default string will be returd
+
+- [code to input](./Input.py)
+
+
+---
+
+# **Data Types in Python**
 
 Python supports a wide range of data types for different kinds of data storage.
 
@@ -184,6 +173,30 @@ Python supports a wide range of data types for different kinds of data storage.
 - **Range**: Sequence of numbers
 - **None**: Represents the absence of value
 
+- [Datatypes](./DataTypes.md)
 ---
 
-- [Datatypes](./DataTypes.md)
+# Type Casting in python:
+converting one data type into another data type using following function
+- `int()`
+- `float()`
+- `bool()`
+- `complex()`
+- `str()`
+
+
+# eval()
+- the main objective function is to read anydata from the keyboard
+- while reading string data type we must use '' or "" 
+- eval function is also used to perfrom following operation
+- NAO
+- string concatination SC
+- SR
+- applying + between 2 strings is string concatination
+- applying * between 2 strings is string repatation.
+
+
+---
+
+# Operators in python
+[operators in python](./Operators/Operators.md)
