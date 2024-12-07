@@ -149,4 +149,108 @@ following are the membership operators in python
 - `in`
 - `not in`
 
-write a python script
+
+---
+# Bitwise operators
+to perform bit level operations 
+- bitwise and operation ( `&` )
+- bitwise or operation ( `|` )
+- bitwise xor operation ( `^` )
+- bitwise not operation or 1's complement (`~`)
+- left shift ( `<<` )
+- right shift ( `>>` )
+
+### Truth Table for AND and OR Operations
+
+| a | b | a AND b | a OR b |
+|---|---|---------|--------|
+| 1 | 1 |    1    |    1   |
+| 1 | 0 |    0    |    1   |
+| 0 | 1 |    0    |    1   |
+| 0 | 0 |    0    |    0   |
+
+### Truth Table for XOR Operation
+
+| a | b | a XOR b |
+|---|---|---------|
+| 1 | 1 |    0    |
+| 1 | 0 |    1    |
+| 0 | 1 |    1    |
+| 0 | 0 |    0    |
+
+### Truth Table for NOT Operation
+
+| a | NOT a |
+|---|-------|
+| 1 |   0   |
+| 0 |   1   |
+
+
+```
+a = 10
+b = 8
+print(a&b)
+print(a|b)
+print(a^b)
+print(~a,~b)
+```
+
+|      8 , 4 , 2 , 1  | operation |  value |
+|---------------------|-----------|--------|
+|      1   0   1   0  |     a     |    10  |
+|      1   0   0   0  |     b     |    8   |
+|      1   0   0   0  |   a & b   |    8   |
+|---------------------|-----------|--------|
+|      1   0   1   0  |   a | b   |    10  |
+|---------------------|-----------|--------|
+|      0   0   1   0  |   a ^ b   |    2   |
+|---------------------|-----------|--------|
+
+
+### left shift and right shift 
+|16,8,4,2,1|operation|value|
+|----------|---------|-----|
+|0 1 0 0 0 | a | 10|
+|0 0 1 0 0 | a>>1|4|
+|0 0 0 1 0 | a>>2|2|
+|1 0 0 0 0 | a<<1|16|
+
+
+---
+How to define to declare a binary number in Python?
+
+binary : `0b10010 or 0B10010`
+octal : `0o761 or 0O761`
+hexa : `0XA12B or 0xA12B or 0Xa12b or 0xa12b`
+
+# bin()
+It is used to convert a interger(decimal),octal_number,hexa_decimal number into binary format.
+# oct()
+It is used to convert a interger,binary, hexa decimal number into octal format.
+# hex()
+it is used to convert interger, binary, octal number into hexadecimal format.
+|hexa decimal|value|
+|------------|-----|
+|   0-9      | 0-9 |
+|a or A| 10|
+|b or B| 11|
+|c or C| 12|
+|d or D| 13|
+|e or E| 14|
+|f or F| 15|
+
+### to convert string binary to integer
+```
+a = "101"
+print(int(a,2))
+# 2 is the base number 
+```
+
+
+---
+
+
+
+
+
+

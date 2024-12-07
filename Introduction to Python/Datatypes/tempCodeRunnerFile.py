@@ -1,5 +1,8 @@
+d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}
+print(d)
 
-d = {1:3, 2:12, 3:433, 4:233}
-print()
-print(sorted(d.items()))
-print(sorted(d.items(),reverse=True))
+# to update dictionary
+d['mdate'] = 2024
+d['expdate'] = 2029
+
+print(d)

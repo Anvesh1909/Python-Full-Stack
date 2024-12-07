@@ -1,0 +1,31 @@
+{% extends "index.html" %}
+
+{% block table %}
+
+<div class="col-md-6">
+    <h3>Teacher Profiles</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>ID</th><th>Teacher</th><th>Phone</th><th>Date of Birth</th></tr>
+        </thead>
+        <tbody>
+            {% for i in TeacherProfile %}
+                <tr>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.name.name }}</td>
+                    <td>{{ i.phone }}</td>
+                    <td>{{ i.dob }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h5>Add Teacher Profile</h5>
+    <form action="{% url 'TeacherProfile' %}" method="post">
+        {% csrf_token %}
+        {{ TeacherProfileForm.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+
+{% endblock table %}

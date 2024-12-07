@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+
+        <table>
+            <thead>
+            <th>
+                id
+            </th>
+            <th>
+                name
+            </th>
+            <th>
+                age
+            </th>
+            <th>
+                gender
+            </th>
+        </thead>
+        {% for i in emp %}
+        <tbody>
+            <td>
+                {{i.id}}
+            </td>
+            <td>
+                {{i.name}}
+            </td>
+            <td>
+                {{i.age}}
+            </td>
+            <td>
+                {{i.gender}}
+            </td>
+
+        </tbody>
+            {% endfor %}
+        </table>
+        
+       
+ 
+</body>
+</html>

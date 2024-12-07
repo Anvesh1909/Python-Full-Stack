@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block table %}
+
+<div class="col-md-6">
+    <h3>Subjects</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>Teacher</th></tr>
+        </thead>
+        <tbody>
+            {% for i in Subject %}
+                <tr><td>{{ i.id }}</td><td>{{ i.name }}</td><td>{{ i.teacher.name }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h5>Add Subject</h5>
+    <form action="{% url 'Subject' %}" method="post">
+        {% csrf_token %}
+        {{ SubjectForm.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock table %}

@@ -199,4 +199,130 @@ converting one data type into another data type using following function
 ---
 
 # Operators in python
+
+in python programming language we do have following operators which are follows
+
+- Arthimetic operators
+- Assignment operators
+- Logical operators
+- Equality operators
+- Comparision operators
+- Ternary operators
+- Chaining operators
+- Special type of operators
+- Bitwise operators
+
 [operators in python](./Operators/Operators.md)
+
+
+---
+## CLA in Python:
+
+Python supports CLA which stands for command line argument. CLA or command line argument
+can be represent as if we are passing one or more than one arguments at time of executing the 
+Python script then it is said to CLA in Python. To implement CLA in Python we do have a module named
+as sys module inside the sys module we do have a attribute named argv
+
+
+- argv stores the data in List not an Array
+- While working with argv variable file is placed in indexing position.
+- Indexing is applicable for argv variable
+- Slice operator is applicable for argv variable
+- Each object inside the list is by default string type as per the application requirement we can use type casting
+- If you want to read full name we must use `" "` not single quotation.
+
+write a python script to perform sum of any number of arguments assume that argument might be 0 or more than 1 number of argument
+without using indexing 
+
+---
+
+# input and output statements in python
+python supports I/O statements. the main objective of I/O statemets is to generate tge various application output as per the application requirement.
+
+- `input()`: To read data from the console at run time
+- `print()`: To display data in the console 
+
+### sep :
+it is an attribute which can be written inside the print(). the main objective of the sep_attribute is to display the date_format, time_format,Amnount INR_format
+
+### end :
+it is an attribute inside the print(). the main objective of end attribute is to display multiline contant into a single line.
+
+### formatted string ( F-string )
+- `%d or %i` : interger data type
+- `%f` : floating data type
+- `%s` : string or list, typle, set, dict data type
+
+while working with formatted string , is not required in print() function.
+
+Replacement operator( `{}` )
+replacement operator cann be defined or declare as `{}` which can be return inside the print() statement. the main objective of replacement operator is to replace the content as per the application requirement.
+
+
+`print("name is {} age {} sal {}".format(name,age,sal))`
+
+
+- [code for input outputs](./InputsAndOutput/)
+
+---
+# comprehension in python
+
+python supports comprehension methodology. it can be represent as if we are using one or more than one expresion with one or more than one condition then it is said to be comprehension in python
+
+- list comprehension
+- tuple comprehension
+- set comprehension
+- dict comprehension 
+
+## list comprehension
+
+`l1 = [x*x for x in range(1,10list comprehension)]`
+- `x*x` expression `for` is condition
+
+```
+
+l1 = [ x*x for x in range(1,11)]
+
+for i in l1:
+    print(i,end=" ")
+
+l2 = [ x*x for x in range(1,11) if x%2 == 0] 
+```
+
+write a python script develop 5 meaning full use cases using list comprehentions
+
+---
+# Tuple comprehension
+if we are using one or more than one expression with one or more than one condition then it is said to be tuple comprehension.
+internally tuple comprehension return the data / information in generator object class is generator
+
+
+```
+type of t
+<class 'generator'>
+t
+<generator object <genexpr> at 0x000001B0F8959F20>
+```
+
+we need to use * followd by variable 
+or 
+using for loop
+
+---
+
+# set comprehension
+if your using one or more than expreseion with one or more than one condition then it is said to be set comprehension
+
+---
+# dict comprehension
+
+---
+importent topics 
+- list comprehension
+- dict comprehension
+- diffrence betweeen list and dict comprehension
+---
+
+
+# control statements
+- [contol statement](./ControlStatements.md)

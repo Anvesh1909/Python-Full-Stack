@@ -1,0 +1,29 @@
+{% extends "index.html" %}
+
+{% block table %}
+
+<div class="col-md-6">
+    <h3>StudentSubjects</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>ID</th><th>Name</th><th>subject</th></tr>
+        </thead>
+        <tbody>
+            {% for i in StudentSubjects %}
+                <tr>
+                    <td>{{ i.id }}</td>
+                    <td>{{ i.Subject }}</td>
+                    <td>{{ i.Student }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h5>Add Teacher Profile</h5>
+    <form action="{% url 'StudentSubjects' %}" method="post">
+        {% csrf_token %}
+        {{ StudentSubjectsForm.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock table %}

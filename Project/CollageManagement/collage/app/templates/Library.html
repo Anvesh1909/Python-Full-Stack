@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block table %}
+
+<div class="col-md-6">
+    <h3>Library Records</h3>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>ID</th><th>Book</th><th>Student</th><th>Returned</th></tr>
+        </thead>
+        <tbody>
+            {% for i in Library %}
+                <tr><td>{{ i.id }}</td><td>{{ i.book }}</td><td>{{ i.student.name }}</td><td>{{ i.returned }}</td></tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <h5>Add Library Record</h5>
+    <form action="{% url 'Library' %}" method="post">
+        {% csrf_token %}
+        {{ LibraryForm.as_p }}
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+
+{% endblock table %}

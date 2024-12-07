@@ -1,0 +1,221 @@
+A  12-11-2024
+
+1. Combine the two dictionaries d1={'Eid':1,'Ename':'Ram'} and d2={'Salary':56000.0,'Company':'TCS'} as a single dicrtionay and add the all values to an empty list without using values()&append().
+
+2. Convert the string "Iam a Angular Developer" into "IAM.a.ANGULAR.developer" within a single line of code.
+
+3. Show the output as follows by using Slicing to [[["Hi","Iam","a","Django","Developer","in","TCS","Company"]]].
+  Output:
+  'I-DJANGO-dEVELOPER-tcs.com'
+
+4. Write a python code to differentiate between '=='&'is' operator,'=='&'in' operator.
+
+5. Findout the values of A,B,C and guess the output :
+  A=4<<2
+  B=17>>3
+  C=19<<4 and 26>>3
+  print(A and B or C)
+
+
+
+B 14-11-2024
+
+1. Write a python code to generate the following output using CLA.
+  Output : 'George' 'Bush'
+
+2. Write a python code to display the output as follows using the elements 5,-3,9,0,7,2 in CLA.
+  Output : [-3,0,2,5,7,9]
+
+3. Show the output as follows by using CLA.
+  Output: 2-4-6-8-10-
+
+4. Findout the sum of the elements from the user input using CLA.
+
+5. Check whether the number is a 7 multiple or not,if it is 7 multiple then check that exists in the multiples=[33,49,35,24,45] or not using CLA.
+
+
+
+
+C 22-11-2024
+
+1.If the string S="Rossum" then if i've enter 3 as user input then output should be 'sum'.Explain with code.
+
+2.Checkout whether the first element and last element are same in the list [4,3,5,2,6,2,4],if yes show output as "True" OR "False".
+
+3.If num=3579 then show the output as "9 7 5 3"(With separated empty spaces).
+
+4.Calculate the tax for the purchase amount,if the purchase amount is less than 13000 then 0% tax,if purchase is in between 13000 to 21000 then tax should be 15%,if purchase is morethan 21000 then tax should be 18%.(Purchase should be take as dynamically)
+
+5.Write a code that accepts three names in the user input,show the output as follows without using indexing or slicing.
+  output: Name1 : Mahendra
+          Name2 : Singh
+          Name3 : Dhoni
+
+6.Create a string that takes the first character,middle character,last character from the string. 
+  (Ex: input="James" output: 'Jms')
+
+7.Create a string that contains another string in the middle position of it's string.
+  (Ex: input1="Hel0",input2="Hi" output: 'HeHilo')
+
+8.Write a python code to convert the string "Python" into "nhyPto".
+
+9.Write a python code to convert the two strings s1="ABC",s2="xyz" into "AzByCx".
+
+10.Convert the string "Ram-is-a-DataScientist" into 'Ram is a Data-Scientist" without using replace().
+
+
+
+
+
+D 22-11-2024
+
+
+Generate the following three patterns :
+
+
+***********
+* .  .  . *
+* .  .  . *
+* .  .  . *
+* .  .  . *
+* .  .  . *
+***********
+
+
+***********
+*1        *
+*2 2      *
+*3 3 3    *
+*4 4 4 4  *
+*5 5 5 5 5*
+***********
+
+* * * * *
+        *
+* * * * *
+*
+* * * * *
+
+
+
+
+
+E 28-11-2024
+
+
+1> create a function that takes parameter as a string to display the count of characters that how many times repeated in the string "software engineer".
+input:- software engineer
+output:- {'s': 1, 'o': 1, 'f': 1, 't': 1, 'w': 1, 'a': 1, 'r': 2, 'e': 4, ' ': 1, 'n': 2, 'g': 1, 'i': 1}
+
+
+2> explain the difference between for loop and while loop ? and print the following pattern
+           ****
+            ****
+             ****
+              **** 
+
+3> print the following pattern by using for loop and while loop ?
+0 - 11111
+1 - 22222
+2 - 33333
+3 - 44444
+4 - 55555
+5 - 66666
+
+4> write a code to check whether the given string is palindrome or not w/o using built-in functions?
+
+5> write a code to check whether the given number is palindrome or not w/o using built-in functions?
+
+
+
+
+
+F 29-11-24
+
+1> Create a function to find nth largest number from the list l=[4,2,0,9,7,3,2,11] without using builtin functions.
+
+2> convert string of numbers into integer format without using typecasting ?
+
+3> You are given an integer list 'ARR' of size 'N' and an integer 'S'. Your task is to return the list of all pairs of elements such that 
+   each sum of elements of each pair equals 'S'.
+   
+   input:- arr = [1,2,3,4,5,6]
+        s=7
+
+   output :- [(3, 4), (2, 5), (1, 6)]
+
+4> find the prime numbers between given range using lambda function ?
+
+   input :- enter start point:- 8
+         enter end point:- 20
+
+   output :- [11, 13, 17, 19]
+
+5> Input a string having some digits. Write a function to return the sum of digits present in this string
+[hint :- use isalnum()]
+
+
+
+G 2-12-2024
+
+1> Write a Python function that accepts a string and counts the number of upper and lower case letters.
+   Sample String : 'The quick Brow Fox'
+   Expected Output :
+   No. of Upper case characters : 3
+   No. of Lower case Characters : 12
+
+2> Write a Python function that takes a list and returns a new list with distinct elements from the first list.
+   Sample List : [1,2,3,3,3,3,4,5]
+   Unique List : [1, 2, 3, 4, 5]
+
+3> Write a Python function that takes a number as a parameter and checks whether the number is prime or not.
+   Note : A prime number (or a prime) is a natural number greater than 1 and that has no positive divisors other than 1 and itself.
+
+4> write a function to check whether the given string is Palindrome or not ?
+
+5> write a function to take n inputs of student's marks and calculate sum and average of the marks ? define a function for that ?
+
+
+
+H 3-12-2024
+
+3rd december
+---------------
+
+1> Python Program for Binary To Decimal Conversion ?
+2> Python program for octal to decimal conversion ?
+3> Python program for decimal to binary conversion ?
+4> Python program to find number of integers which has exactly x divisors? 
+5> write a program to replace the character 'e' with the character 's' and the character 's' with character 'e' in the following string list
+   str_lst = ['geeks','for','geeks']
+
+
+
+
+I  5-12-24
+
+1. Write a function that computes the area of a triangle given the base and height as parameters.
+2. Write and test a function to meet this specification. squareEach (nums) nums is a list of numbers. Modifies the list by squaring each entry.
+3. Write and test a function to meet this specification. sumList (nums) nums is a list of numbers. Returns the sum of the numbers in the list.
+4. Write and test a function to meet this specification. toNumbers (strList) strList is a list of strings, each of which represents a number. Modifies each entry in the list by converting it to a number.
+5. Parameters are an important concept in defining functions. 
+   a) What is the purpose of parameters? 
+  b) What is the difference between a formal parameter and an actual parameter? 
+  c) In what ways are parameters similar to and different from ordinary variables?
+
+
+
+J 6-12-24
+
+1. Write a python code to perform sum of squares of [2,4,6,8] using lambda function.
+
+2. Can u perform the product for each elements to the [3,5,10,6] using lambda function.
+  output : 900 (:>3*5*10*6)
+
+3. Write a python code to validate filter(),map(),reduce() using lambda (Anonymous) function.
+
+4. Retrieve the even numbers only that should be greater than 300 and it's length should be 3 only from the list nums=[810,2, 1555,15, 720, 425, 130,13, 350] using lambda function.
+
+5. Retrieve the Strings from the list that should start with digits using lambda function.
+
+6. Check prime number using lambda function.

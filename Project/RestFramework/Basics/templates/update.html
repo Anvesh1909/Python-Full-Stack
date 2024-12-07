@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Update Form</h1>
+    <form action="" method="post">
+        {% csrf_token %}
+        <label for="FirstName">FirstName</label>
+        <input type="text" id="FirstName" name="FirstName" value= "{{update.firstName}}">
+        <label for="LastName">LastName</label>
+        <input type="text" id="LastName" name="LastName" value="{{update.lastName}}">
+        <input type="submit" name="" id="">
+    </form>
+</body>
+</html>

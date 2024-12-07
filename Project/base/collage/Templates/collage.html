@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    Hello world
+    <form action="" method="post">
+        {% csrf_token %}
+        <select name="collage" id="collage">
+            <option value="1">Deptartment</option>
+            <option value="2">Lecturer</option>
+            <option value="3">Student</option>
+            <option value="4">StudentLecturer</option>
+        </select>
+        <button type="submit" >Get Table</button>
+    </form>
+
+    {% block table %}
+    
+    
+    {% endblock table %}
+
+
+    
+
+</body>
+</html>
