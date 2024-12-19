@@ -1,7 +1,7 @@
 
 # Functional programming language:
 
-```
+```python
 def Functiono_Name():
     pass
 ```
@@ -23,7 +23,7 @@ what is function?
 ### user defined function
 - user defiend function( custom function ) can be represent as a function which is created by programmer of developer at the time of writing the business logic then it is said to be user defined function
 - in python user defined function can be created as def followed by function name
-```
+```python
 def functionName():
     pass
 ```
@@ -33,7 +33,7 @@ what is __name__=="__main__":
 
 it is a method is used to execute the piece of code or block of unit directly or indirectly as per the application requirement.
 
-```
+```python
 def functionName():
     pass
 
@@ -45,7 +45,7 @@ if __name__=="__main__":
 ### code reusablity
 once write call any number of times 
 
-```
+```python
 def functionName():
     print("Fuction call")
 
@@ -67,7 +67,7 @@ if __name__=="__main__":
 
 
 
-```
+```python
 def add(a,b): # formal parameter
     print(f"{a} + {b} = {a+b}")
 
@@ -153,7 +153,7 @@ while working with functional programming language we do have following types of
 ## global variable
 - global variable can be represent as a variable which is defined outside a function is called gloable variable 
 - global  variable can be accessed anywhere in the program
-```
+```python
 a = 10 # global varible
 def function():
     pass
@@ -171,7 +171,7 @@ example
 ## local variable
 
 local variable can be represent as a varible which is defined or declared inside a function the it is said to be local varible. the scope of the local varible is within the function only.
-```
+```python
 g = 293 # global varible
 def function():
     l = 10 # local variable
@@ -182,7 +182,7 @@ def function():
 
 global varible can be defined or declared inside a function using global keyword followed by variale_name. the scope of global keyword varibale we can access any where inside program.
 
-```
+```python
 def function():
     global g 
     g = 10
@@ -200,7 +200,7 @@ working on name_less function / lamba function
 - lamba function can be represent as a function which does not have any name then it is said to be lambda function.
 - in python we can define or declare a lambda function using lambda keyword.
 
-```
+```python
 square = lambda a: a*a
 print(square(5))
 ```
@@ -229,7 +229,7 @@ it is a predefined function in python the main objective of map function is to t
 it is a predefined function in python the main objective of reduce function  is to combine the multiple objects into single entity.
 - reduce function present in functool module.
 
-```
+```python
 from functool import reduce
 ```
 example
@@ -242,7 +242,7 @@ example
 
 Python supports nested functions or inner function. nested function or inner function can be represent as a defining or declaring a function inside another function then it is said to be nested function or inner function.
 
-```
+```python
 def Function1():
     print("Function1")
 

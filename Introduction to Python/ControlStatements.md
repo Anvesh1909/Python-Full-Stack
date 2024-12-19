@@ -14,7 +14,7 @@ the main objective of control statement is to control the applications by writin
 ## if statement
 - if is a dision making statement in python if 'if' condition is true then if block will be executed 
 
-```
+```python
 if condition:
     # if block 
 or 
@@ -30,7 +30,7 @@ if(condition):
 It is also known as inner if statement. nested if statement/ inner if statememt can be represent as defining or declaring if statement inside another if statement then it is said to ne nested if statement 
 
 - note: while working with nested if statement or inner if statement if outer if statement condition is true then it will enter in inner if statement
-```
+```python
 if condition1:
     # outer if
     if condition2:
@@ -44,7 +44,7 @@ write a python script using nested if statement develop 5 meaningfull usecases
 
 ## if else:
 if a else a decision making statement in python. if condition is satisfied then if block will be executed otherwise else block will be executed.
-```
+```python
 if condition:
     # if block
 else:
@@ -63,7 +63,7 @@ assignment for if else statement
 ## if elif else:
 the main objective of if elif else statement is to check more than one condition
 
-```
+```python
 if condition1:
     # if block
 elif condition2:
@@ -104,7 +104,7 @@ following are the itterative statements in python
 ## for loop
 the main objective of for loop if you want to execute number of statements number of times if our data / information is in sequence 
 
-```
+```python
 for i in range(10):
     # for block
 
@@ -135,7 +135,7 @@ it is also known as inner for loop. nested for loops or inner forloop can be rep
 
 Note: while working with nested for loop or inner forloop if the outer forloop condition is true then inner for loop condition will be executed untill its condition is false.
 
-```
+```python
 for (condition):   # outer forloop
     # outer for block
     for (condition):  # inner forloop
@@ -143,7 +143,7 @@ for (condition):   # outer forloop
 ```
 
 001210122012
-```
+```python
 for i in range(3):
     print(i)
     for j in range(3):
@@ -152,7 +152,7 @@ for i in range(3):
 
 
 example:
-```
+```python
 
 
 
@@ -217,7 +217,7 @@ it is predifined function in python. the main objective of zip function to perfo
 # while loop 
 the main objective of while loop if you want execute number of statements number of times if our data or information not in sequence or infite loop then we can go with while loop
 the syntax for while loop is
-```
+```python
 i = 0
 while condition:
     # while block
@@ -229,7 +229,7 @@ note : post increment oprator and pre increment operator is not supported in pyt
 
 
 1. write a python script read a string from the keyboard 
-```
+```python
 0
 1
 2
@@ -253,7 +253,7 @@ D-3
 
 # nested while loop ( inner while loop ):
 it can be represent as defining and declaring a while loop inside another while loop then it is said to be inner while loop or nested while loop.
-```
+```python
 while condition1:
     # outer while body
     while condtion2:
@@ -263,7 +263,7 @@ note: while working with nested while loop/ inner while loop or inner while loop
 
 
 
-```
+```python
 l = [[1,2,3],[4,5,6],[7,8,9]]
 
 output 1:
@@ -311,7 +311,7 @@ output 4:
 ['A','B','C']
 [1,2,3]
 
-```
+```python
 output 1:
 A
 1
@@ -362,7 +362,7 @@ break statement is always associated with itterative statement. either for loop 
 #### for with else block
 the main objective of for with else block if break statement inside the forloop is satisfied then else block will not be executed
 
-```
+```python
 for i in iterable:
     if condition:
         break
@@ -392,7 +392,7 @@ the main objective of continue statement is to skip the current itteraration if 
 # pass statement
 pass is a transfer statement in python. pass means nothing or empty.
 
-```
+```python
 def Functiono_Name():
     pass
 ```
