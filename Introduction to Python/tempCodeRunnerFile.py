@@ -1,9 +1,15 @@
-print("Python Full Stack Hello World!")
+@Even
+def number(n):
+    print(n)
 
-print("Python Full Stack Hello World!")
 
-print("Python Full Stack Hello World!")
+def Even(func):
+    def inner(n):
+        if n%2==0:
+            func(n)
+        else:
+            print("please pass even number")
+    return inner
 
-print("""if developers/ programmers/ software developers/ 
-application developer are writing the business logic with only 
-predefined function then it is a program""")
+number(10)
+number(9)
