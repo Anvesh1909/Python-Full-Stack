@@ -63,3 +63,20 @@ a.display()
 
 
  
+# real world use case of duck typing
+class AudioFile:
+    def play(self):
+        print("Playing audio")
+
+class VideoFile:
+    def play(self):
+        print("Playing video")
+
+def play_media(media):
+    media.play()
+
+audio = AudioFile()
+video = VideoFile()
+
+play_media(audio)
+play_media(video)

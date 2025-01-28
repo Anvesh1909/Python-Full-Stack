@@ -41,3 +41,23 @@ else if result is mpre than 1 then we use forloop
 
 
 - write a python script using generator consept develop 6 meaningfull usecases
+
+
+---
+
+# logging modules
+the main objective of login module is to treace the information. information can be student information, product information, customer information. 
+- in python we do have a module named as logging module 
+- note: while working with login moduels we do have followinf levels
+    ```
+    - CRITICAL --> 50
+    - ERROR    --> 40
+    - WARNING  --> 30
+    - INFO     --> 20
+    - DEBUG    --> 10
+    - NOTSET   --> 
+    ```
+    
+
+
+    

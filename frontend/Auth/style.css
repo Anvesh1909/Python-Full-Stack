@@ -1,0 +1,168 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-image: url("https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-line-dark-background-image_2344719.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container .loginform{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.715);
+    padding: 20px;
+    width: 25vw;
+    min-height: 50vh;
+    
+}
+
+.container .loginform .input{
+    margin: 10px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 2vh;
+    width: 20vw;
+}
+
+#submitBtn{
+    margin: 10px;
+    background-color: red;
+    border-radius: 20px;
+    height: 5vh;
+    width: 20vw;
+}
+
+.buttonGroup{
+    background-color: brown;
+    height: 5vh;
+    width: 20vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttonGroup .btn{
+    background-color: rgb(0, 0, 0);
+    margin: 5px;
+    padding: 5px;
+    color:rgba(0, 255, 4, 0.715)
+}
+
+
+
+.navbar{
+    background-color: rgba(0, 0, 0, 0.751);
+    height: 10vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.navbar ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar ul li{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 100px;
+    background-color: brown;
+    height: 3vh;
+    width: 10vw;
+
+    border-radius: 5px;
+    
+}
+
+
+.navbar a{
+    color: aliceblue;
+}
+
+
+.cardGroup{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.cardGroup .card{
+    max-width: 20vw;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+
+.cardGroup .card h1{
+    background-color: aqua;
+    padding: 2vh;
+}
+
+.cardGroup .card p{
+    background-color: beige;
+    padding: 2vh;
+}
+
+
+.cardGroup .card img{
+    height: 22vh;
+}
+
+
+
+
+
+
+.cardGroup1{
+    display: flex;
+    justify-content: center;
+}
+
+.cardGroup1 .card{
+    max-width: 20vw;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.715);
+}
+
+.cardGroup1 .card h1{
+    background-color: aqua;
+    padding: 2vh;
+}
+
+.cardGroup1 .card p{
+    background-color: beige;
+    padding: 2vh;
+}
+
+
+.cardGroup1 .card img{
+    height: 22vh;
+}
+
+
+
+.success {
+    color: rgb(77, 255, 0);
+    text-align: center;
+    opacity: 0;
+}

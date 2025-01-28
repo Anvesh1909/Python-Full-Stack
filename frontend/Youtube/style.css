@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: bisque;
+}
+
+
+nav{
+    font-family: 'Ubuntu',serif;
+}
+
+nav ul{
+    /* to get in stright line */
+    display: flex;
+
+    /* to get centered horizontally */
+    align-items: center;
+
+    list-style-type: none;
+    height: 90px;
+    background-color: black;
+    /* text color */
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+
+
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.brand img{
+    width: 75px;
+    padding-right: 20px;
+}
+
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu',sans-serif;
+
+    display: flex;
+    margin: 23px auto;
+    width: 70%;
+    border-radius: 12px;
+    padding: 34px;
+
+    background-image: url('background.jpeg');
+}
+
+.bottom{
+    position: sticky;
+    bottom: 0px;
+    height: 100px;
+    background-color: black;
+
+    /* to make bottom player center */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* to get icons bottom */
+    flex-direction: column;
+
+    color: white;
+
+}
+
+.icons{
+    margin-top: 20px;
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+.songItemContainer{
+    margin-top: 20px;
+}
+
+.songItem{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+    background-color: white;
+    /* width: 80%; */
+    color: black;
+    margin: 12px 0;
+    border-radius: 34px;
+    padding-right: 10px;
+}
+
+.songItem img{
+    width: 43px;
+    margin: 0 23px;
+    border-radius: 34px;
+}
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.songListPlay i{
+    cursor: pointer;
+}
+
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+}
+
+
+.songInfo marquee{
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+}

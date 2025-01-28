@@ -37,8 +37,14 @@ class Googlepay(UPI):
     def balance(self):
         print("Amt balance using Googlepay")
 
-name = input("Enter a name:")
-u = globals()[name]
-u.deposite(100)
-u.withdraw(199)
-u.display()
+# name = input("Enter a name:")
+# u = globals()[name]
+p = Phonepe()
+p.deposite(100)
+p.withdraw(199)
+p.balance()
+
+g = Googlepay()
+g.deposite(100)
+g.withdraw(199)
+g.balance()

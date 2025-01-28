@@ -1,0 +1,12 @@
+ERROR:division by zero:06:00:46 03:01:2025 PM
+Traceback (most recent call last):
+  File "c:\Users\manve\Desktop\Python-Full-Stack\Advance Python\Logging\tempCodeRunnerFile.py", line 10, in <module>
+    a = eval(f"{a}{op}{b}")
+  File "<string>", line 1, in <module>
+ZeroDivisionError: division by zero
+ERROR:division by zero:06:00:52 03:01:2025 PM
+Traceback (most recent call last):
+  File "c:\Users\manve\Desktop\Python-Full-Stack\Advance Python\Logging\tempCodeRunnerFile.py", line 10, in <module>
+    a = eval(f"{a}{op}{b}")
+  File "<string>", line 1, in <module>
+ZeroDivisionError: division by zero

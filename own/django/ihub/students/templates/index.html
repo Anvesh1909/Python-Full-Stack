@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>hello world students</h1>
+
+
+
+    <table>
+        <thead>
+            <th>
+                id
+            </th>
+            <th>
+                name
+            </th>
+            <th>
+                batch
+            </th>
+            <th>
+                course
+            </th>
+        </thead>
+        <tbody>
+            {% for i in students %}
+                <tr>
+                    <td>{{i.id}}</td>
+                    <td>{{i.name}}</td>
+                    <td>{{i.batch}}</td>
+                    <td>{{i.course}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+</body>
+</html>

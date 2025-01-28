@@ -212,7 +212,7 @@ S1 = None # useless object
 del S1 # useless object
 ```
 
-# distroctor 
+# distractor 
 it is a method in python which can be defined or declare distructor method as follows
 
 ```python
