@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin : 0;
+            text-align: center;
+        }
+        header{
+            background-color: brown;
+            height: 10vh;
+        }
+
+        footer{
+            background-color: brown;
+            height: 10vh;
+        }
+
+        #Left{
+            float: left;
+
+            background-color: yellow;
+            height: 80vh;
+            width: 20vw;
+
+        }
+
+        #Right{
+            float: right;
+
+            background-color: yellow;
+            height: 80vh;
+            width: 20vw;
+        }
+
+        #Middle{
+            height: 80vh;
+        }
+
+
+        #block_A{
+            background-color: red;
+            height: 20vh;
+            margin : 10px;
+            align-content: center;
+        }
+
+        #block_B{
+            background-color: red;
+            height: 20vh;
+            margin : 10px;
+            align-content: center;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header component</h1>
+    </header>
+    <main>
+        <section id="Left">
+            <h1>Left Component</h1>
+        </section>
+
+
+        <section id="Right">
+            <h1>Right Component</h1>
+            <div id="block_A">
+                <h1>block_A</h1>
+            </div>
+            <div id="block_B">
+                <h1>bloack_B</h1>
+            </div>
+        </section>
+
+        <section id="Middle"></section>
+
+        
+    </main>
+    <footer>
+        <h1>Footer Component</h1>
+    </footer>
+</body>
+</html>

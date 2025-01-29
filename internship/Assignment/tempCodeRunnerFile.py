@@ -1,5 +1,10 @@
-  
-# 16
-n = int(input("Enter a numeber: "))
+
+# 20
+n = 5
 for i in range(1,n+1):
-    print(f"Current Number is: {i} and the cube is {i**3}")
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print()
+    
+    
+    

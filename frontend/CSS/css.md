@@ -120,4 +120,18 @@ positon
 # margin 
 - css and css3 supports margin properties 
 - the main objective of margin is to work on page level operations
-- 
+
+---
+# padding
+- css and css3 supports padding properties
+- the main objective of padding propertie is to work on content of the section.
+
+---
+develop a meaningfull frontend to exact meaning between margin and padding propertie
+
+---
+# working on float properties
+- for alignment purpose
+
+---
+develop a frontend to know the exact diffrence between visibility hidden and display none

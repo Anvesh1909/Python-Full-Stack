@@ -97,3 +97,45 @@ write a python script store 10 product information by using writelines function 
 - `writerow()` -> it is used to create the csv file with its name
 ---
 - develop one meaningfull application logic using picking and unpicking along with csv module.
+
+
+---
+# Ziping and unzipping
+- it is the process or methodlogy to convert one or more than one files into a zip folder format. 
+- the main objective zipping method to decrease the sizze of the file.
+- to implement zipping in python we do have a module named zipfile  module 
+- we do have a class named `ZipFile("File_Name","mode",ZIP_DEFLATED)`
+- winrar software must be installed to execute ziping in python
+
+## Unzipping
+- it is the process or methodlogy to read the file name with its content 
+- then it is said to be unzipping methodlogy
+- module named zipfile inside that we do have a class name
+-  `ZipFile("filename","mode",ZIP_STORED)`
+- namelist(): it is used to list all the file names inside the zip file
+
+
+
+---
+# objects serialization and deserialization
+- it is a process or methodlogy to convert the python object into javascript json object
+- then it is said to be object serialization 
+- to implement object serialization we do have a module named as `json` module
+- inside the json module we do have nested module called `dump(object,filename)` 
+
+| Python Object      | JavaScript Object |
+|--------------------|-------------------|
+| Int, Float         | number            |
+| String             | string            |
+| True/False         | true/false        |
+| None               | null              |
+| List, Tuple, set   | An array          |
+| Dict               | An object         |
+
+## deserialization
+- it is the process or methodology to convert json object into python object
+- in read mode using function `json.load(f)`
+---
+Questions
+1. what is the diffrence between zip function and zipping methodlogy in python explain with an example
+2. 

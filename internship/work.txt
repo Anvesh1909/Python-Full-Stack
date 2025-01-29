@@ -26,7 +26,7 @@ padfs : QT_Home_Work_3_Python
         QT_Home_Work_5_Python
 
 
-day 6 jan 27 
+day 6,7 jan 27,28
 pdfs :  Python Full Stack Core - Assigments Week 1
         Python Full Stack Core - Assigments Week 2 - DataTypes (Int, String, Float)
         Python Full Stack Core - Assigments Week 4 - Control Flow Statements

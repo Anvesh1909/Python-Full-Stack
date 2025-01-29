@@ -117,3 +117,34 @@ h5 {
     width: 300px;
     background-color: black;
 }
+
+
+
+
+
+/* margin */
+#hello{
+    border : 2px solid black;
+}
+.abc{
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    margin : 30px 18px 17px 100px;
+}
+
+
+
+/* padding */
+.padding{
+    background-color: black;
+    height: 100px;
+    width: 100px;
+    padding: 50px;
+}
+
+.box{
+    background-color: red;
+    height: 10%;
+    width: 10%;
+}

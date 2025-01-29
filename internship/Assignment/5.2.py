@@ -4,7 +4,7 @@ def main():
         
     root = tk.Tk()
     
-    root.title("GUI Addition")
+    root.title("Arthimetic operators")
     root.geometry('500x500')
     
     first = tk.IntVar()

@@ -162,3 +162,114 @@ for i in range(1,n+1):
     
     
 # 17
+n = 5
+a = 2 
+s = 0
+for i in range(n):
+    s+=a
+    a = a*10 +2
+print(s)
+
+
+
+
+# 18
+n = 6
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+    
+    
+    
+# 19
+
+n = int(input("Enter a number: "))
+if n%2==0:
+    if n<0:
+        sign = "negitive"
+    else:
+        sign = "positive"
+    num = "even"
+else:
+    num = "odd"
+    if n<0:
+        sign = "negitive"
+    else:
+        sign = "positive"
+
+
+print(f"the given number is {sign} and {num} number")
+    
+
+
+
+
+# 20
+n = 5
+for i in range(1,n+1):
+    for j in range(i,0,-1):
+        print(j,end=" ")
+    print()
+    
+    
+    
+    
+# 21
+n = 5
+for i in range(1,n+1):
+    for j in range(1,n+1):
+        print(max(i,j),end=" ")
+    print()
+        
+
+
+# 22
+n = 8
+for i in range(1,n+1):
+    for j in range(1,i+1):
+        print(i*j,end=" ")
+    print()
+    
+    
+    
+    
+# 23
+n = 5
+for i in range(n,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+    
+    
+    
+    
+# 24
+n = 5
+for i in range(n,0,-1):
+    for j in range(n-i):
+        print(" ",end="")
+    for j in range(i):
+        print("* ",end="")
+    print()
+    
+    
+    
+# 25
+n = 5
+for i in range(1,n+1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+for i in range(n-1,0,-1):
+    for j in range(i):
+        print("*",end=" ")
+    print()
+    
+    
+
+
