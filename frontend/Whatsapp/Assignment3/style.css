@@ -1,0 +1,64 @@
+body{
+    background-color: rgb(179, 236, 238);
+    display: flex;
+    justify-content: center;
+}
+
+
+main{
+    text-align: center;
+}
+
+h1{
+    color: blue;
+}
+
+.boxes{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    /* display: inline-block; */
+}
+
+.left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3vh;
+    height: 50vh;
+    width: 22vw;
+    background-color: blue;
+    color: white;
+}
+
+.left img{
+    height: 20vh;
+    border-radius: 50%;
+}
+
+.right{
+    margin-left: 5vh;
+    height: 50vh;
+    width: 22vw;
+}
+
+
+
+.box1,.box2{
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    width: 11vw;
+    text-align: start;
+}
+
+.box1{
+    border-bottom: 5px solid rgb(255, 0, 0);
+}
+
+.box2{
+    border-bottom: 5px solid rgb(4, 255, 0);
+}
+
+.right figure img{
+    width: 10vh;
+}

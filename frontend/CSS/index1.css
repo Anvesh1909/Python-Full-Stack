@@ -1,0 +1,30 @@
+.boxes{
+    background-color: black;
+    height: 50vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box{
+
+    /* display: inline-block; */
+
+    background-color: blueviolet;
+    height: 7vh;
+    width: 7vw;
+
+    text-align: center;
+    align-content: center;
+
+    margin: 10px;
+}
+
+
+.box:hover{
+    background-color: green;
+    font-size: 20px;
+    height: 9vh;
+    width: 9vw;
+}

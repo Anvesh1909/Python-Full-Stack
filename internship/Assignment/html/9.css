@@ -1,0 +1,36 @@
+
+*{
+    margin: 0;
+}
+
+main{
+    display: flex;
+}
+
+.left{
+    width: 30vw;
+}
+
+.left img{
+    width: 30vw;
+}
+
+.right{
+    width: 70vw;
+}
+
+.right .headSection{
+    text-align: left;
+    align-content: center;
+    height: 35vh;
+    padding-left: 4vw;
+}
+.right .headSection h1{
+    font-size: 5vh;
+}
+
+
+.content{
+    background-color: rgb(37, 33, 52);
+    height: 100vh;
+}

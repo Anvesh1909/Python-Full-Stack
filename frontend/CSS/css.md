@@ -135,3 +135,10 @@ develop a meaningfull frontend to exact meaning between margin and padding prope
 
 ---
 develop a frontend to know the exact diffrence between visibility hidden and display none
+---
+# display inline
+while working with inline height and width property height and width property will not applicable
+---
+- develop a meaningfull frontend using display inline and inline-block property
+- develop a meaningfull frontend using display flex property
+---

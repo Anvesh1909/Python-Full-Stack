@@ -1,0 +1,94 @@
+## virtualenv (Virtual environment)
+pip install virtualenv
+dependencies (packages) isolate
+virtualenv .venv -> to create virtualenv
+.\.venv\Scripts\activate ->  to activate virtualenv
+
+
+to install django
+pip install django
+
+
+
+
+what is django
+html,css,js - frontend
+
+python      - middle level language (backend)
+    - connect frontend to database and business logic
+database    - backend
+to connect frontend to backend
+
+
+django MVT architechture
+M - models 
+    - database tables (backend)
+V - views
+    - to write business logic 
+    - for request and responce
+T - Templates
+    - HTML 
+    - static folder
+        - css, js, any media
+
+
+--------------------
+1 project multiple apps 
+
+Amazon
+    - shoping app
+    - payment app
+    - mini tv
+    - authentication
+
+a project is divided into multiple apps
+-------
+how to create a project
+django-admin startproject project
+
+to run server
+cd project
+python manage.py runserver
+
+---
+to create an app
+python manage.py startapp app1
+
+in setting.py
+
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    'app1'
+]
+
+
+why backend
+    to process requests and responce
+
+views.py 
+
+
+user requests 
+that request should sent to a function 
+this is done by urls 
+
+
+to return a responce we use 
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Home page")
+
+
+
+when we want to return an html page we need a Templates
+inside the Templates folder we can store all html pages
+
+
+def home(request):
+    return render(request,"home.html")

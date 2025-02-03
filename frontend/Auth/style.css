@@ -166,3 +166,29 @@ body{
     text-align: center;
     opacity: 0;
 }
+
+
+
+
+
+.navbar input{
+    height: 30px;
+    padding-left: 20px;
+    border-radius: 50px;
+
+    border: 2px solid red;
+}
+
+.navbar img{
+    border-radius: 50%;
+    height: 25px;
+}
+
+
+
+.search{
+    border: 2px solid red;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 100px;
+}
