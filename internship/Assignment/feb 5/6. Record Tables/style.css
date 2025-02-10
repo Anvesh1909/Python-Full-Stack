@@ -116,6 +116,7 @@ table{
 .pages{
     float: right;
     margin-top: 1vh;
+    /* width: 90vw; */
 }
 /* 
 table{
@@ -155,11 +156,25 @@ td button{
 .pages p{
     font-size: 2vh;
     font-weight: 200;
+    height: 5vh;
+    width: 89.8vw;
+    margin-top: -1vh;
     
+    border: 2px solid rgba(197, 197, 197, 0.553);
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+
+    border-top: none;
 }
 
 .pages img{
     height: 2vh;
+}
+
+.pages .last{
+    margin-right: 2vw;
 }
 
 

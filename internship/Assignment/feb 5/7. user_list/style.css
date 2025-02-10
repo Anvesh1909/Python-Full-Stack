@@ -22,16 +22,21 @@ body{
     display: flex;
     justify-content: start;
     padding-bottom: 1vh;
+    /* text-align: start; */
     
     margin-left: 1vw;
     margin-top: 3vh;
     /* text-decoration: underline; */
+    /* border-width: 0 0 2px;
+    border-style: solid; */
+
+    
+    
 }
 
 
 .userTable .tabelHead th{
-    border-bottom: 2px solid black;
-
+    border-bottom: 2px solid rgba(0, 0, 0, 0.568);
 }
 .user{
     width: 25vw;
@@ -109,6 +114,7 @@ body{
     width: 5vw;
     font-size: 1.3vh;
     border-radius: 3px;
+    border-radius: none;
 }
 
 .active{

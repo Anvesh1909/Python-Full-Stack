@@ -63,6 +63,7 @@ main{
     /* background-color: aqua; */
 
     display: flex;
+    /* align-items: start; */
     width: 25vw;
     margin-left: 2rem;
 }
@@ -95,6 +96,7 @@ button{
     /* padding-right: 1vw; */
     margin-left: 0vw;
 
+
 }
 
 .box1{
@@ -116,10 +118,11 @@ button{
 }
 
 .boxes img{
-    height: 7vh;
+    height: 6vh;
 
     /* margin-top: 2rem;
     padding-right: 3rem; */
+    /* padding-left: -4vw; */
 }
 
 a{

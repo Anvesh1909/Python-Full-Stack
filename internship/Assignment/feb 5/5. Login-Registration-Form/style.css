@@ -79,7 +79,7 @@ main .signup{
 
     margin-bottom: 2vh;
     
-    /* padding-left: 2vh; */
+    padding-left: 1vh;
 }
 
 
@@ -109,7 +109,7 @@ main .signup{
     border: none;
 
     height: 3vh;
-    width: 17vw;
+    width: 18vw;
 
     font-size: 2vh;
     margin-left: 1vh;
@@ -191,7 +191,7 @@ hr{
 
 .facebook,.google{
 
-    height: 7vh;
+    height: 5vh;
     width: 21vw;
     
     font-size: 2vh;
@@ -238,7 +238,7 @@ hr{
 .google img,.facebook img{
     height: 3vh;
     background-color: white;
-    border: 4px solid white;
+    border: 2px solid white;
     border-radius: 50%;
 
     /* float: left; */
