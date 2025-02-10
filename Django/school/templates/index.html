@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Students</title>
+</head>
+<body>
+    Welcome to Students page
+
+
+    <h1>A student information </h1>
+    <p>
+        {{student.rollNo}}
+        {{student.name}}
+        {{student.standard}}
+        {{student.presentage}}
+    </p>
+
+    <h1>All students information</h1>
+    {% for i in allStu %}
+    <p>
+        {{i.rollNo}}
+        {{i.name}}
+        {{i.standard}}
+        {{i.presentage}}
+    </p>
+    {% endfor %}
+
+
+    <hr>
+    <table border="1">
+        <tr>
+            <th>id</th>
+            <th>rollNo</th>
+            <th>name</th>
+            <th>standard</th>
+            <th>percentage</th>
+        </tr>
+        
+        {% for i in allStu %}
+            <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.rollNo}}</td>
+                <td>{{i.name}}</td>
+                <td>{{i.standard}}</td>
+                <td>{{i.presentage}}</td>
+            </tr>
+        {% endfor %}
+    </table>
+
+</body>
+</html>

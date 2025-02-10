@@ -206,3 +206,61 @@ urlpatterns = [
 
 ---
 - develop a django project which contains one application use views.py using functional component and class component
+
+
+---
+# Working on Templates 
+in django template is meant for front end development
+- inside the templates we can put html and html5 files to represent content on the web page
+- inside the application no need to change the setting if the templates not in application
+- inside templates dir `os.path.join('BASE_DIR','templates')`
+
+---
+# working on static folder 
+- static folder contains the following folders 
+    - images
+    - css
+    - js
+- inside the application no need to change the setting if the static not in application
+- inside templates dir `staticDIR = os.path.join('BASE_DIR','static')`
+```python
+STATICFILES_DIRS = [
+    BASE_DIR / "static",
+    os.join.path(BASE_DIR,"static")
+]
+```
+
+---
+
+
+# how to create loginForm in django with client side validation
+
+---
+# model
+- model is a class in django
+- the main objective of model is to create one or more than one database tables 
+---
+develop a django application create the model for student which consist of 10 records store the 10 records manually in the data base extract the complete data into the django web page using class component
+
+---
+how to connect django with mysql database 
+- need to install pymysql 
+```python
+DATABASES = {
+    # 'default': {
+    #     'ENGINE': 'django.db.backends.sqlite3',
+    #     'NAME': BASE_DIR / 'db.sqlite3',
+    # }
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'DjangoCon',
+        'USER': 'root',
+        'PASSWORD': 'Anv@14078',
+        'HOST' : '127.0.0.1',
+        'PORT' : '3306'
+    }
+}
+```
+
+## Assignment
+- develop one django application using complete frontend and backend including template and static folder and creat models and extract data from mysql to our django web pageuu

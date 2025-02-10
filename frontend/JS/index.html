@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+        body{
+            text-align: center;
+        }
+    </style>
+
+    <script>
+        document.write("<br>this is using the head js");
+    </script>
+
+
+</head>
+<body>
+    <script>
+        document.write("<br>",300+500);
+        document.write("<br>this is using the body js");
+    </script>
+
+    <script src="script.js"></script>
+
+    <hr>
+
+    <h1>Variable in js</h1>
+    <script>
+        var name = "Anvesh";
+        document.write("EID using var: "+name)
+        
+        let Price = 5000.0;
+        document.write("<br>Price using let: "+Price);
+
+        const pi = 3.14;
+        document.write("<br> PI using const: "+pi);
+    </script>
+
+    <hr>
+    <h1>console.log()</h1>
+    <script>
+        var a = 20;
+        var b = 30;
+        document.write("a+b=",a+b);
+        console.log("a+b=",a+b);
+    </script>
+
+    <hr>
+    
+    <h1>alter dialog</h1>
+    <button onclick="clickAlert()">Hello</button>
+
+    <script>
+        // window.alert("welcome to javascript alert box");
+
+        function clickAlert(){
+            alert("The button Hello is clicked")
+        }
+    </script>
+
+
+    <hr>
+
+    <h1>confirm dialog</h1>
+    <form action="">
+        <input type="radio" name="gender" id="male" value="male">
+        <label for="male">male</label><br>
+        <input type="radio" name="gender" id="female" value="female">
+        <label for="female">female</label><br>
+        <button onclick="submitdetails()">submit</button>
+    </form>
+    <script>
+        function submitdetails(){
+            window.confirm("ARE YOU SURE?");
+        }
+    </script>
+
+
+    <hr>
+    <h1>prompt dialog</h1>
+    <button onclick="promptFunc()">prompt</button><br>
+    <button onclick="ADD()">ADD <br> by defalut string Function</button><br>
+    <button onclick="ADDTYPECASTING()">ADD <br> by type casting Function</button><br>
+
+    <script>
+
+        function promptFunc(){
+            let abc = window.prompt("Enter the value: ");
+            window.alert("Your value is : "+abc);
+        }
+
+        function ADD(){
+            let a = window.prompt("Enter the value: ");
+            let b = window.prompt("Enter the value: ");
+            console.log(a+b);
+            console.log(a+" "+typeof(a));
+            console.log(b+" "+typeof(b));
+
+        }
+
+        function ADDTYPECASTING(){
+            let a = parseInt(window.prompt("Enter the value: "));
+            let b = parseInt(prompt("Enter the value: "));
+            console.log(a+b);
+        }
+
+    </script>
+
+    <hr>
+
+    <h1>Data type in javascript</h1>
+    check console
+    <button onclick="datatypes()">check data types</button>
+    <pre>
+        number
+        string
+        boolean boolean
+        object
+        undefined
+    </pre>
+    <script>
+        function datatypes(){
+            let i = 10;
+            console.log(typeof(i))
+
+            let f = 3.14;
+            console.log(typeof(f))
+
+            let s = "Anvesh";
+            console.log(typeof(s))
+
+            let b1 = true;
+            let b2 = false;
+            console.log(typeof(b1),typeof(b2))
+
+            let n = null;
+            console.log(typeof(n))
+
+            let a;
+            console.log(typeof(a))
+        }
+    </script>
+
+    <hr>
+
+    <h1>Array Data type</h1>
+
+    <h2>using array literal</h2>
+    <script>
+        let ages = [21,22,23,24,25];
+        document.write("Ages are:",ages);
+        document.write("<br>data type is: ",typeof(ages));
+
+        document.write("<br>Using indexes:<br>");
+        document.write(ages[0]);
+        document.write(ages[1]);
+        document.write(ages[2]);
+        document.write(ages[3]);
+        document.write(ages[4]);
+    </script>
+
+
+    <h2>using an instance of an array </h2>
+    <script>
+        let details = new Array();
+        details[0] = 1;
+        details[1] = "Anvesh";
+        details[2] = 25000.00;
+        details[3] = true;
+
+        document.write("details : ",details);
+    </script>
+
+    <h1>using an array construtor</h1>
+    <script>
+        let d = new Array(1,"Anvesh",25000.00,true);
+        document.write("details : ",d);
+    </script>
+
+    <h1>Methods in array</h1>
+    <script>
+        let nums = [21,22,23,24,25];
+        document.write("nums are:",nums);
+
+        document.write("<h4>push Elements<h4>");
+        nums.push(26);
+        nums.push(27,28);
+        document.write("nums are:",nums);
+
+        document.write("<h4>pop Elements<h4>");
+        nums.pop();
+        nums.pop();
+        document.write("nums are:",nums);
+    </script>
+
+    
+
+    <hr>
+    <h1>JSON or object data type in javascript</h1>
+    <script>
+        document.write("<h2>using object leteral</h2>")
+        let std_details = {
+            "id" : 1,
+            "name" : "Anvesh",
+            "fee" : 290000.00,
+            "present" : false
+        }
+
+        document.write(std_details.id,std_details.name,std_details.fee,std_details.present);
+        document.write("<br><br>")
+        document.write(std_details["id"],std_details["name"],std_details["fee"],std_details["present"]);
+
+
+        document.write("<h2>using instance of an object</h2>")
+        let std_details2 = new Object();
+        std_details2.id = 1;
+        std_details2.name = "ANvesh";
+        std_details2.fee = 290000.00;
+        std_details2.present = false;
+
+        document.write(std_details2.id,std_details2.name,std_details2.fee,std_details2.present);
+        document.write("<br><br>")
+        document.write(std_details2["id"],std_details2["name"],std_details2["fee"],std_details2["present"]);
+
+        document.write("<h2>using object constructor</h2>")
+
+        function std_details3(id,name){
+            this.id = id;
+            this.name = name;
+        }
+
+        std1 = new std_details3(1,"Anvesh");
+        std2 = new std_details3(2,"bunny");
+        document.write(std1.id,std1.name);
+        document.write("<br><br>");
+        document.write(std2.id,std2.name);
+
+
+    </script>
+
+
+    <hr>
+    <h1>Rest Parameter</h1>
+
+    <script>
+        function ADD(...a){
+            // document.write(a);
+            // document.write("<br>");
+            // document.write(typeof(a));
+            // document.write("<br>");
+            let s = 0;
+            for(let i=0; i<a.length ;i++){
+                document.write(a[i]," , ");
+                s+=a[i];
+            }
+            document.write(" sum is : ",s);
+            document.write("<br>");
+        }
+
+        ADD();
+        ADD(1);
+        ADD(1,2);
+        ADD(1,2,3);
+        ADD(1,2,3,4);
+
+    </script>
+
+    <hr>
+    <h1>conditional statements</h1>
+    <button onclick="OpenWindow()">Window open</button>
+    <script>
+        function OpenWindow(){
+            var language = window.prompt("Enter the language")
+            if(language == "javascript"){
+                document.write(language," Meant for client side validation")
+            }
+        }
+    </script>
+    <br>
+    <button onclick="openEven()">Number</button>
+
+    <script>
+            function openEven(){
+                let a = window.prompt("Enter a number: ")
+
+                if(a%2==0){
+                    document.write("Even");
+                } else if(a%2==1){
+                    document.write("odd");
+                }
+            }
+    </script>
+
+
+
+
+
+
+
+
+
+</body>
+</html>

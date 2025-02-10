@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main id="form">
+        <sections class="details">
+            <div class="header">
+                <p class="headText">View Profile Details</p>
+                <img src="close.png" alt="" onclick="closeForm()">
+            </div>
+            <div class="bottom">
+                <div class="left">
+                    <img src="man.png" alt="">
+                </div>
+                <hr>
+                <div class="right">
+                    <form action="">
+                        <table>
+                            <tr>
+                                <td class="l"><label for="name">Name:</label></td>
+                                <td class="i"><input type="text" name="name" id="name"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="age">Age:</label></td>
+                                <td class="i"><input type="text" name="age" id="age"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="ncityame">City:</label></td>
+                                <td class="i"><input type="text" name="city" id="city"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="email">Email:</label></td>
+                                <td class="i"><input type="text" name="email" id="email"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="phNo">Phone &nbsp;&nbsp;&nbsp;Number:</label></td>
+                                <td class="i"><input type="text" name="phNO" id="phNo"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="post">Post:</label></td>
+                                <td class="i"><input type="text" name="post" id="post"></td>
+                            </tr>
+                            <tr>
+                                <td class="l"><label for="date">Start Date:</label></td>
+                                <td class="i"><input type="text" name="date" id="date" placeholder="mm/dd/yyyy"></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </sections>
+
+    </main>
+
+    <section class="bg">
+        <div class="button">
+            <button class="newUser" onclick="openForm()"><img src="newUser.png" alt="" >New User</button>
+        </div>
+        <section class="listtable">
+            <table border="1">
+                <tr class="tableHead">
+                    <th class="d1">S.No</th>
+                    <th class="d2">Picture</th>
+                    <th class="d3">Name</th>
+                    <th class="d4">city</th>
+                    <th class="d5">Email</th>
+                    <th class="d6">Phone no</th>
+                    <th class="d7">Date</th>
+                    <th class="d8">Action</th>
+                </tr>
+
+                <tr class="dark">
+                    <td>1</td>
+                    <td class="profile"><img src="man.png" alt=""></td>
+                    <td>Raja Shekar</td>
+                    <td>Hyderabad</td>
+                    <td>rajashekar@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>11/11/2011</td>
+                    <td>
+                        <div class="action">
+                            <img src="view.png" alt="" class="view">
+                            <img src="editing.png" alt="" class="edit">
+                            <img src="delete.png" alt="" class="delete">
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td class="profile"><img src="man.png" alt=""></td>
+                    <td>Raja Shekar</td>
+                    <td>Hyderabad</td>
+                    <td>rajashekar@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>11/11/2011</td>
+                    <td>
+                        <div class="action">
+                            <img src="view.png" alt="" class="view">
+                            <img src="editing.png" alt="" class="edit">
+                            <img src="delete.png" alt="" class="delete">
+                        </div>
+                    </td>
+                </tr>
+                <tr class="dark">
+                    <td>1</td>
+                    <td class="profile"><img src="man.png" alt=""></td>
+                    <td>Raja Shekar</td>
+                    <td>Hyderabad</td>
+                    <td>rajashekar@gmail.com</td>
+                    <td>1234567890</td>
+                    <td>11/11/2011</td>
+                    <td>
+                        <div class="action">
+                            <img src="view.png" alt="" class="view">
+                            <img src="editing.png" alt="" class="edit">
+                            <img src="delete.png" alt="" class="delete">
+                        </div>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+    </section>
+
+
+    <script>
+        function openForm(){
+            let f = document.getElementById('form');
+            // console.log("form open")
+            if(f.style.display =='block'){
+                f.style.display  = 'none';
+            } else{
+                f.style.display = 'flex'
+            }  
+        }
+
+        function closeForm(){
+            // console.log("close")
+            let f = document.getElementById('form');
+
+            if(f.style.display =='flex'){
+                f.style.display  = 'none';
+            } 
+        }
+    </script>
+</body>
+</html>

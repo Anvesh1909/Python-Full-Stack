@@ -19,9 +19,17 @@ from django.contrib import admin
 from django.urls import path
 from app1.views import index
 from app2.views import IndexClass
+from frontendDev.views import index as frontendDev
+from bootstrapApp.views import bootstrap
+from loginPage.views import LoginView
+
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("FunctionalComponent",index),
     path("ClassComponent",IndexClass.as_view()),
+    path("frontendDev",frontendDev),
+    path("bootstrap",bootstrap),
+    path("loginPage",LoginView.as_view()),
+    
 ]

@@ -1,0 +1,266 @@
+
+*{
+    margin: 0;
+}
+
+
+
+#form{
+    height: 100vh;
+    width: 100vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(0, 0, 0, 0.493);
+    display: none;
+    /* opacity: 1; */
+    position: absolute;
+    
+    top: 0;
+    /* display: flex; */
+
+}
+
+.details{
+    width: 60vw;
+    height: 80vh;
+    background-color: rgb(255, 254, 254);
+
+    border-radius: 2vh;
+    /* position: absolute; */
+
+    /* left: 5vh; */
+    /* top: 5vh; */
+}
+
+.left img{
+    height: 30vh;
+    border: 2px solid black;
+    border-radius: 2vh;
+    margin-left: 1vw;
+    margin-top: 2vh;
+}
+
+
+.header{
+    /* background-color: blue; */
+    height: 8vh;
+    color: white;
+    text-align: start;
+    align-content: center;
+    font-size: 3vh;
+    /* margin-left: 1vw; */
+
+    background-color: blue;
+
+    display: flex;
+    align-items: center;
+    border-top-left-radius: 2vh;
+    border-top-right-radius: 2vh;
+
+}
+
+
+.header .headText{
+    margin-left: 2vh;
+    width: 56vw;
+
+}
+
+.header img{
+    height: 2.5vh;
+    float: right;
+    opacity: 0.5;
+}
+
+.bottom{
+    display: flex;
+}
+
+.left{
+    height: 70vh;
+    width: 20vw;
+    /* background-color: green; */
+}
+
+
+.right{
+    height: 70vh;
+    width: 40vw;
+    /* background-color: aquamarine; */
+
+    /* border-left: 5px solid blue; */
+
+    /* border-top-left-radius: 2vh; */
+}
+
+.bottom hr{
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    width: 0.5vh;
+
+    background-color: blue;
+}
+
+
+.l{
+    width: 10vw;
+    height: 9.5vh;
+}
+
+.l label{
+    margin-left: 1vw;
+    font-weight: 600;
+    font-size: 3vh;
+    text-align: left;
+}
+
+.i{
+    width: 30vw;
+    height: 9.5vh;
+}
+
+
+
+.i input{
+    width: 29vw;
+    height: 5vh;
+
+    border: none;
+    border-bottom: 2px solid blue;
+
+    background-color: rgba(163, 163, 163, 0.423);
+
+    padding-left: 1vh;
+}
+
+
+
+
+table {
+    border-collapse: collapse;
+}
+
+
+.newUser{
+    background-color: blue;
+    height: 5vh;
+    width: 10vw;
+
+    font-size: 2.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: none;
+    border-radius: 1vh;
+
+    color: white;
+    margin-top: 2vh;
+    margin-left: 2vw;
+    
+}
+
+
+
+.newUser img{
+    height: 3vh;
+    margin-right: 1vh;
+
+}
+
+
+.listtable{
+    width: 100vw;
+}
+
+.listtable table{
+    width: 95vw;
+    margin-left: 2.5vw;
+    margin-top: 2vh;
+}
+
+.listtable .tableHead{
+    height: 5vh;
+}
+
+
+.listtable .d1{
+    width: 5vw;
+}
+
+.listtable .d2{
+    width: 6vw;
+}
+
+
+.listtable .d3{
+    width: 15vw;
+}
+
+.listtable .d4{
+    width: 8vw;
+}
+
+.listtable .d5{
+    width: 23vw;
+}
+
+
+.listtable .d6{
+    width: 10vw;
+}
+
+
+.listtable .d7{
+    width: 9vw;
+}
+
+
+.listtable .d8{
+    width: 13vw;
+}
+
+.listtable td{
+    height: 8vh;
+    align-content: center;
+    text-align: center;
+}
+
+.listtable .profile img{
+    width: 5vh;
+}
+
+.listtable .dark{
+    background-color: rgb(219, 219, 219);
+}
+
+
+.listtable .action img{
+    width: 1.1vw;
+    margin-left: 1vh;
+}
+
+.view{
+    background-color: green;
+    padding: 1.4vh;
+    border-radius: 0.5vh;;
+}
+
+
+.edit{
+    background-color: blue;
+    padding: 1.4vh;
+    border-radius: 0.5vh;
+}
+
+.delete{
+    background-color: red;
+    padding: 1.4vh;
+    border-radius: 0.5vh;
+}
+
+

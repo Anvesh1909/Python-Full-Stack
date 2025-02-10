@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        .dropDownBtn{
+            background-color: red;
+            height: 10vh;
+            width: 20vw;
+
+            font-size: 4vh;
+        }
+
+        .dropdownmenu{
+            background-color: green;
+            height: 20vh;
+            width: 20vw;
+
+            font-size: 4vh;
+
+            display: none;
+        }
+
+        li{
+            list-style-type: none;
+        }
+
+        li:hover{
+            background-color: gray;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <button class="dropDownBtn" onclick="openMenu()">Frontend</button>
+    <div class="dropdownmenu">
+        dropdown 1
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </div>
+
+
+    <div class="dropdownmenu">
+        dropdown 2
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </div>
+
+    <div class="dropdownmenu">
+        dropdown 3
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+        </ul>
+    </div>
+
+
+
+    <hr>
+
+    <button onclick="openall()" class="dropDownBtn">open all</button>
+
+
+    <script>
+        function openMenu(){
+            let menu = document.getElementsByClassName("dropdownmenu")[2];
+            if(menu.style.display == "block"){
+                menu.style.display = "none";
+            } else {
+                menu.style.display = "block";
+            }
+        }
+
+
+        function openall(){
+            let menu = document.getElementsByClassName("dropdownmenu");
+            console.log(menu);
+            for(let i=0; i<menu.length; i++){
+                if(menu[i].style.display == "block"){
+                    menu[i].style.display = "none";
+                } else {
+                    menu[i].style.display = "block";
+                }
+            }
+        }
+
+    </script>
+</body>
+</html>

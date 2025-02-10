@@ -1,0 +1,192 @@
+*{
+    margin: 0;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 90vw;
+    border: 3px solid rgba(165, 165, 165, 0.708);
+    padding: 2vw;
+
+    margin-top: 2vh;
+}
+
+main p{
+    font-weight: 700;
+    font-size: 2.3vh;
+}
+
+.top{
+    display: flex;
+    margin-top: 1vh;
+    width: 90vw;
+}
+
+.search{
+    border: 1px solid rgb(93, 93, 93);
+    /* padding: 1vh; */
+    width: 30vw;
+    height: 5vh;
+}
+
+.search img{
+    height: 2vh;
+}
+
+.searchBox .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0.5vw;
+
+    border: 1px solid rgba(102, 102, 102, 0.445);
+}
+
+.searchBox form{
+    display: flex;
+}
+
+.search .searchInp{
+    width: 27vw;
+    height: 4vh;
+    border: none;
+    margin-left: 1vh;
+
+    font-style: italic;    
+}
+
+.search .searchInp:focus{
+    outline: none;
+}
+
+
+.buttons{
+    /* margin-left: 45vw; */
+    /* position: relative;
+    right: 10px; */
+    width: 60vw;
+    display: flex;
+    justify-content: end;
+
+    
+}
+
+.buttons button , .searchBtn{
+    border: 1px solid rgb(93, 93, 93);
+    padding: 1vh;
+    background-color: rgb(255, 255, 255);
+
+    border: 1px solid rgba(0, 0, 0, 0.418);
+
+}
+
+.buttons img{
+    width: 2vh;
+    height: 2vh;
+}
+
+.drop, .buttons .drop{
+    height: 1vh;
+    width: 1vh;
+}
+
+
+table{
+    width: 90vw;
+    text-align: left;
+    background-color: rgb(236, 236, 236);
+    margin-top: 2vh;
+}
+
+.nameData{
+    color: rgb(0, 142, 194);
+}
+
+.action{
+    width: 7vw;
+}
+
+.pages{
+    float: right;
+    margin-top: 1vh;
+}
+/* 
+table{
+    border: 2px solid black;
+} */
+
+tr{
+    height: 5vh;
+    background-color: white;
+}
+
+
+th,td{
+    padding-left: 2vh;
+}
+
+
+td button{
+    width: 8vw;
+    height: 5vh;
+    background-color: rgb(237, 235, 235);
+    border: 1px solid rgb(211, 211, 211);
+    margin-left: -2vh;
+
+    text-transform: uppercase;
+
+    font-size: 2vh;
+
+}
+
+
+.gray{
+    background-color: rgba(197, 197, 197, 0.305);
+}
+
+
+.pages p{
+    font-size: 2vh;
+    font-weight: 200;
+    
+}
+
+.pages img{
+    height: 2vh;
+}
+
+
+
+
+#actionblock{
+    position:absolute;
+   
+    display: none;
+
+    right: 1vw;
+    top: 28vh;
+
+    border: 1px solid rgba(0, 0, 0, 0.525);
+    width: 12vw;
+    height: 12vh;
+    background-color: white;
+}
+
+#actionblock button{
+    display: block;
+    width: 12vw;
+    height: 6vh;
+    font-size: 2vh;
+    border: none;
+    background-color: white;
+    font-size: 2vh;
+
+}
+

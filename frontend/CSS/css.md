@@ -142,3 +142,17 @@ while working with inline height and width property height and width property wi
 - develop a meaningfull frontend using display inline and inline-block property
 - develop a meaningfull frontend using display flex property
 ---
+
+# Position 
+- position : static
+- position : absolute
+- position : relative
+- position : fixed
+
+- if position is static it will not change the postion
+- absolute will change
+- relative will change
+- fixed 
+
+- develop a frontend to know the exact diffrence between position absolute and relative
+- 

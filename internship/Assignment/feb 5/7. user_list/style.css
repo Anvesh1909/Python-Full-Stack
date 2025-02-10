@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    /* text-align: center; */
+
+}
+
+.userTable{
+    border-collapse: collapse;
+
+    width: 70vw;
+}
+
+
+
+
+.userTable .tabelHead th span{
+    display: flex;
+    justify-content: start;
+    padding-bottom: 1vh;
+    
+    margin-left: 1vw;
+    margin-top: 3vh;
+    /* text-decoration: underline; */
+}
+
+
+.userTable .tabelHead th{
+    border-bottom: 2px solid black;
+
+}
+.user{
+    width: 25vw;
+}
+
+.Created{
+    width: 10vw;
+}
+
+.Status{
+    width: 7vw;
+}
+
+.Email{
+    width: 25vw;
+}
+
+
+.Icons{
+    width: 20vw;
+}
+
+
+.data{
+    background-color: rgba(128, 128, 128, 0.148);
+    height: 7.5vh;
+}
+
+.data .Icons img{
+    height: 2vh;
+    margin-right: 1.5vw;
+    padding: 0.5vh;
+    border-radius: 20%;
+}
+
+.data .user figure{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.data .user figure img{
+    height: 5vh;
+}
+
+.data .user figure figcaption{
+    margin-left: 1vw;
+}
+
+.data .userName, .data .Email{
+    color: blue;
+}
+
+.data td {
+    padding-left: 1vw;
+
+}
+
+.space{
+    height: 0.7vh;
+}
+
+
+.searchIcon,.editIcon{
+    background-color: blue;
+}
+
+.deleteIcon{
+    background-color: red;
+}
+
+
+.inactive,.active,.banned,.pending{
+    height: 2vh;
+    width: 5vw;
+    font-size: 1.3vh;
+    border-radius: 3px;
+}
+
+.active{
+    background-color: green;
+    color: white;   
+}
+
+.banned{
+    background-color: red;
+    color: white;   
+}
+
+.pending{
+    background-color: rgb(192, 192, 2);
+    color: white;   
+}
+
+.inactive{
+    background-color: rgb(75, 75, 75);
+    color: white;   
+}
+
+
+.tabs {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
+    margin-top: 4vh;
+}
+
+.tabs .box{
+    height: 4vh;
+    width: 4vh;
+
+    font-size: 2vh;
+    font-weight: 500;
+    border: 1px solid rgb(70, 70, 70);
+
+
+    text-align: center;
+    align-content: center;
+    color: blue;
+}
+
+.tabs img{
+    height: 2vh;
+}

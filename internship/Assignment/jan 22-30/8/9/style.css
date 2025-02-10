@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    font-family:'Times New Roman', Times, serif;
+}
+
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+main{
+    width: 700px;
+    height: 1000px;
+    /* background-color: black; */
+
+    /* border: 2px solid black; */
+}
+
+
+.resume{
+    width: 700px;
+    height: 1000px;
+    margin-left: 20px;
+}
+
+.top{
+    display: flex;
+}
+
+.top .left{
+    width: 250px;
+    height: 300px;
+    background-color: rgba(41,85,96,255);
+}
+
+
+.top .left img{
+    width: 250px;
+    height: 300px;
+
+    /* clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); */
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 80%);
+}
+
+.top .right{
+    width: 450px;
+    height: 300px;
+    background-color: white;
+
+    display: flex;
+    align-items: center;
+}
+
+.textBlock{
+    margin-left: 30px;
+}
+
+.name{
+    font-size: 70px;
+    font-weight: 600;
+}
+
+.occupation{
+    font-size: 20px;
+}
+
+
+.bottom .left{
+    height: 700px;
+    width: 250px;
+    background-color: rgba(41,85,96,255);
+    color: white;
+}
+
+
+.left .block{
+    padding-top: 30px;
+    padding-left: 20px;
+    
+}
+
+.left .block img{
+    height: 22px;
+    padding-right: 10px;
+}
+
+.left .block .blockHead{
+    font-size: 22px;
+    font-weight: 600;
+    display: flex;
+}
+
+.left .block .blockBody{
+    padding-top: 10px;
+    font-size: 14px;
+}
+
+
+/* .left .block .blockBody li{
+    margin-bottom: 10px;
+} */
+
+.bottom{
+    display: flex;
+}
+
+.bottom .right{
+    height: 700px;
+    width: 450px;
+
+    background-color: white;
+
+}
+
+
+.bottom .right .block{
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+
+.bottom .right .block .blockHead{
+    font-size: 26px;
+    font-weight: 800;
+}
+
+
+.bottom .right .block .blockBody{
+    font-size: 14px;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+
+
+.bottom .right .block .role{
+    font-size: 20px;
+}
+
+.bottom .right .block .body{
+    font-size: 9px;
+}
+
+.reference{
+    display: flex;
+}
+
+#ref{
+    margin-left: 100px;
+}
+
+.phone,.email{
+    font-size: 10px;
+}

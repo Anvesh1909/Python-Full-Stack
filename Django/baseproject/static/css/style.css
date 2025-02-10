@@ -1,0 +1,24 @@
+*{
+    text-align: center;
+}
+
+body{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+main{
+    width: 50vw;
+}
+
+
+img{
+    width: 50vw;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+}

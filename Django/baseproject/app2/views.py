@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 class IndexClass(View):
     '''
-        "get","post","put","patch","delete","head","options","trace",
+        "get","post","put","patch","delete"
     '''
     def get(self,request):
         return HttpResponse("<h1>Class Component Get</h1>")

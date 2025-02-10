@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+
+}
+
+main{
+    width: 40vw;
+    height: 100vh;
+    background-color: white;
+    display: flex;
+}
+
+
+.photo{
+    background-color: aqua;
+    height: 30vh;
+    width: 15vw;
+}
+
+.photo img{
+    height: 30vh;
+    width: 15vw;
+}
+
+
+.details{
+    background-color: rgb(15, 78, 75);
+    height: 70vh;
+    width: 15vw;
+
+    color: white;
+}
+
+.details .contacts{
+    height: 10vh;
+}
+
+
+.headText{
+    text-align: center;
+    font-weight: 100;
+    padding-top: 3vh;
+    padding-bottom: 1vh;
+}
+
+.bodyText{
+    list-style-type: none;
+    font-size: 11px;
+    font-weight: 100;
+
+}
+
+.name{
+    /* background-color: blue; */
+    height: 30vh;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    
+}
+
+.name div h1{
+    margin-left: 2vw;
+    font-size: 35px;
+}
+
+.name div p{
+    margin-left: 2vw;
+    /* font-size: 35px; */
+}
+
+.profile{
+    background-color: beige;
+    height: 70vh;
+    width: 25vw;
+
+}
+
+
+.profile .profiled{
+    padding: 2vh;
+    
+}
+
+
+.headProfile{
+    font-size: 20px;
+}

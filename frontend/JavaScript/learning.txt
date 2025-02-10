@@ -1,0 +1,73 @@
+node js
+- javascript run time environment
+
+----
+dynamically typed language
+- no need to write the data types of a variable 
+------------------
+python 
+a = 10
+b = "Anvesh"
+
+javascript 
+- variable types in javascript
+    - var (fucntion variable)
+    - let (block variable)
+    - const (block variable constent(which cannot be changed))
+var a = 10;
+let a = 10;
+const a = 10;
+
+-----------
+data types
+- primitive data types
+- number(int,float)
+- string
+- boolean
+- null
+- undefied
+
+
+------
+function is block of code 
+can be written in 2 types
+- using function keyword
+- or using any variable 
+
+
+
+----
+for loop 
+- for(startingvalue; endingvalue ; step){
+
+}
+
+---
+12   -> not a prime
+1,2 ,3,4,6,12
+root 12 = 3. somthing
+
+
+
+19  -> it a prime
+1,19
+root 19 = 4. change
+
+22  -> not a prime
+1,2, 11,22
+root 22 -> 4. change
+
+23 
+1,23
+
+
+
+n = 12 for loop n-2
+n = 19 for loop n-2
+time complexity O(n-2) -> O(n) -> linear time
+
+
+n = 12 root n 
+O(root n) 
+
+

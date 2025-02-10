@@ -1,0 +1,129 @@
+frontend
+- HTML -> structure of page
+- CSS  -> styling 
+- JS   -> fuctionality 
+
+
+----------------------------
+javascript 
+- client side scripting(programming) language
+- js need a browser to run 
+- dynamically typed language
+    - no need to specity data type 
+    in java or c
+    int a=10;
+    string s = "hello";
+    - javascript
+    var a = 10;
+    var s = "hello;
+
+--------------
+types of variables in javascript
+- var (functional scope)
+- let (block scope)
+- const (block scope constent(cannot be changed))
+
+--------------
+fuction
+- block of statements
+- it can be defined using function keyword
+
+returntype functionname(){
+    return returntype 
+}
+
+function functionname(){
+    return 
+} 
+
+
+----
+diffrence btw var,let,const
+var -> functional scope (function keyword)
+let -> block scope  ({block})
+const -> block scope but cannot be changes
+
+
+
+-----
+data type in javascript
+
+primitive data types (which can store only one value)
+- number (int,float)
+- string
+- boolean
+- null
+- undefined 
+
+---- how to change the data type 
+- typeof(variable name)
+
+
+-------------------------------------
+conditional statements (if else)
+iterative statements (for while)
+
+for loop 
+- for(staring ; ending ; step){
+
+}
+- while(condition){
+
+}
+
+--------------------------------------
+prime
+- factors 1 and itself
+12
+- 1,2,3,4,6,12 ->NOT PRIME(COMPOSITE)
+13
+- 1,13 -> PRIME NUMBER
+
+
+
+-------------------------------------
+dialog boxes
+- alert -> to send alert box
+- prompt  -> to take input from user
+- confirm -> conforms users with there decisions
+-------------------------------
+
+
+
+- functions
+- normal function 
+    - function isPrime(n){
+            for(let i=2; i<n ;i++){
+                if(n%i==0){
+                    console.log("it is a composite number");
+                    return 
+                }
+            }
+            console.log("It is a prime number");
+        }
+
+        isPrime(11)
+- arrow function  
+    - using arrow ( => )
+    - variabeltype variabelname = (parameters) =>{
+            body 
+        }
+- anonmous function 
+
+
+
+non primetive data types 
+- array (to store one or more elements)
+    - let a = new Array(1,2,3,4,5);
+        console.log(a);
+    - let a = [1,2,3,4,5,6,7,8];
+        console.log(a);
+- object (json) (to store data in format of key and value pair)
+    - java script object notation
+    - data transfer between backend and frontend.
+- regex 
+
+
+-----
+eventlistener in java script
+- on a condition(click) a particular function should call 

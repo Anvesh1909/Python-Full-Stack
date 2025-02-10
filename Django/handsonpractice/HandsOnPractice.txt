@@ -1,0 +1,93 @@
+project
+- a project can contain multiple applications
+-----------------------------
+to start project
+- django-admin startproject BaseProject
+- cd BaseProject
+-------
+to start server
+- python manage.py runserver
+
+---------
+to create applications
+- python manage.py startapp appname
+- to specify this application belongs to this project 
+- we need add this app inside the setting.py
+INSTALLED_APPS = [
+    "django.contrib.admin",
+    "django.contrib.auth",
+    "django.contrib.contenttypes",
+    "django.contrib.sessions",
+    "django.contrib.messages",
+    "django.contrib.staticfiles",
+    "app1",
+]
+
+
+------------
+to create a view with httpresponse
+
+this functional view
+
+from django.http import HttpResponse
+
+def httpResponseView(request):
+    return HttpResponse("This is httpResponse")
+
+class view 
+- we need to import view
+
+
+# to create class view
+from django.views import View
+
+class HttpClassView(View):
+    def get(self,request):
+        return HttpResponse("This is class view")
+
+
+urls.py
+
+from django.contrib import admin
+from django.urls import path
+
+from app1.views import httpResponseView,HttpClassView
+
+urlpatterns = [
+    path("admin/", admin.site.urls),
+    path("httpResponse",httpResponseView),
+    path("httpClass",HttpClassView.as_view())
+    
+]
+
+
+------
+Templates
+- we can create Templates 2 types
+- application level 
+    - we need to create Templates folder inside application 
+    - no need to change the setting.py 
+- project level
+    - if we are creating Templates inside the project outside the application 
+    - we need specify the path inside the settings
+    - import os
+    - line number 58 
+    - "DIRS": [os.path.join(BASE_DIR,"templates")],
+
+-----
+static 
+- it contains
+- images,css,js
+- create a folder static and specify path in the settings.py 
+- STATICFILES_DIRS = [ os.path.join(BASE_DIR,"static")]
+- 
+
+===
+to use this static folder in the web page
+{% load static %}
+- this will load all static folder , files inside our web page to use
+to link css
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+- to render image
+<img src="{% static 'images/image.png' %}" alt="">
+

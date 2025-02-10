@@ -1,0 +1,81 @@
+
+
+# to create this table in data base we need to write
+python manage.py makemigrations
+python manage.py migrate
+
+makemigrations
+- converts python class models into sql quearies
+migrate
+- executes this sql quearies 
+
+to insert record in the table 
+admin page
+direct execution
+python shells
+
+
+django administrator 
+- super user
+- python manage.py createsuperuser
+- to register students table in admin page 
+- go to admin.py and register
+
+from django.contrib import admin
+
+# Register your models here.
+from students.models import Students
+
+admin.site.register(Students)
+
+
+direct execution in views.py
+from students.models import Students
+
+Students.objects.create(rollNo="3",name="bunny",standard=5,presentage=505)
+
+
+python shell
+in cmd
+
+python manage.py shell        
+
+In [1]: from students.models import Students
+
+In [2]: Students.objects.create(rollNo=4,name="shabana",standard=3000,presentage=100)
+
+
+
+
+it is used to create database table like structure using classes
+- model is nothing but a table 
+by default an id(primary key identity unique and not Null) is given in every table 
+
+models
+- models.Model -> to indicate this is data base table it is used to inheritence
+- fields -> int , float, char, text etc
+
+student -> roll no , name, class, total marks , attendence 
+constrains -> max length, min length, unique, not null
+
+
+
+
+
+how to send information backend to frontend
+- dict(json) -> it stores in form of key value pair 
+
+
+In [1]: from students.models import Students
+
+In [2]: a = Students.objects.get(id=4)
+
+In [5]: a = Students.objects.get(id=4)
+
+In [6]: a.rollNo = 100
+
+In [7]: a.save()
+
+In [8]: a.name = "shabana ma'am"
+
+In [9]: a.save()

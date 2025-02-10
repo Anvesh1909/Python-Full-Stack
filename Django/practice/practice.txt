@@ -92,3 +92,64 @@ inside the Templates folder we can store all html pages
 
 def home(request):
     return render(request,"home.html")
+
+
+
+
+-------------------
+django-admin startproject BaseProject
+cd BaseProject
+python manage.py runserver
+python manage.py startapp app1
+
+---------------------
+what is Templates
+- Templates stores html pages
+- application level 
+    - create Templates folder on application
+    - when we are creating application level Templates
+    - no need to change settings.py
+- project level
+    - create Templates folder on project
+    - we need to set the path for the Templates in settings.py 
+    - inside that serarch Templates
+        - import os
+        - "DIRS": [os.path.join(BASE_DIR,"templates")]
+
+
+from django.shortcuts import render
+
+# Create your views here.
+from django.http import HttpResponse
+
+def httpResponseView(request):
+    return HttpResponse("This is an HTTP RESPONSE")
+    
+
+def homeView(request):
+    return render(request,"home.html")
+
+
+from django.views import View
+
+class HomeClassView(View):
+    def get(self,request):
+        return render(request,"home.html")
+
+
+----------------------------------------------------
+static folder
+- images
+- css
+- js
+
+- created static file inside project 
+- to locate static folder we need to add path inside the setting.py
+add 
+STATICFILES_DIRS = [os.path.join(BASE_DIR,"static")] 
+inside setting.py
+
+- to use static files we need to load inside the page
+    - {% load static %}
+- link css 
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">

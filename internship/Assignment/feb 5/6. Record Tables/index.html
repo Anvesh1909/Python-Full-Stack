@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+        <p>Employee Directory</p>
+        <section class="top">
+            <div class="searchBox">
+                <form action="" method="get">
+                    <div class="search">
+                        <img src="search.png" alt="" class="searchImg">
+                        <input type="text" name="" id="" class="searchInp" placeholder="Search Employees">
+                    </div>
+                    <input type="submit" value="SEARCH" class="searchBtn">
+                </form>
+            </div>
+
+            <div class="buttons">
+                <div class="">
+                    <button class="filterBtn">
+                        <img src="filter.png" alt="">
+                        <img src="down.png" alt="" class="drop">
+                    </button>
+                    <button class="reset"><img src="refresh.png" alt=""></button>
+                </div>
+            </div>
+            
+        </section>
+        <section class="bottom">
+            <table> 
+                <tr>
+                    <th class="name ">Name</th>
+                    <th class="dept">Department</th>
+                    <th class="title">Title</th>
+                    <th class="action">Action</th>
+                </tr>
+                <tr>
+                    <td class="nameData">
+                        John Smith
+                    </td>
+                    <td>
+                        Engineering
+                    </td>
+                    <td>
+                        Director
+                    </td>
+                    <td>
+                        <button onclick="action()">
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td class="nameData">
+                        Micheal Johnson
+                    </td>
+                    <td>
+                        Finance
+                    </td>
+                    <td>
+                        Analyst
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>     
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nameData">
+                        Mary Reed
+                    </td>
+                    <td>
+                        Engineering
+                    </td>
+                    <td>
+                        Software Engineering
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td class="nameData">
+                        Angela Cooper
+                    </td>
+                    <td>
+                        Sales
+                    </td>
+                    <td>
+                        Manager
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nameData">
+                        Elizabeth Ward
+                    </td>
+                    <td>
+                        Sales
+                    </td>
+                    <td>
+                        Sales Associate
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td class="nameData">
+                        Daniel Lewis
+                    </td>
+                    <td>
+                        HR
+                    </td>
+                    <td>
+                        Manager
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nameData">
+                        Paul Martin
+                    </td>
+                    <td>
+                        Finance
+                    </td>
+                    <td>
+                        Analyst
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td class="nameData">
+                        Jessica Peterson
+                    </td>
+                    <td>
+                        Finance
+                    </td>
+                    <td>
+                        Analyst
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                        
+                    </td>
+                </tr>
+                <tr>
+                    <td class="nameData">
+                        Mark Hall
+                    </td>
+                    <td>
+                        Professional Services
+                    </td>
+                    <td>
+                        Manager
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                    </td>
+                </tr>
+                <tr class="gray">
+                    <td class="nameData">
+                        Rebecca Wood
+                    </td>
+                    <td>
+                        Engineering
+                    </td>
+                    <td>
+                        Manager
+                    </td>
+                    <td>
+                        <button>
+                            Actions
+                            <img src="down.png" alt="" class="drop">
+                        </button>
+                        
+                    </td>
+                </tr>
+            
+                
+                
+            </table>
+            <div class="pages">
+                <p><img src="back.png" alt=""> <img src="back (1).png" alt=""> &nbsp</span><b>1-10</b>  of 32  &nbsp;<img src="greater-than-symbol.png" alt=""><img src="next-page.png" alt=""></p>
+            </div>
+        </section>
+    </main>
+    
+    <div id="actionblock">
+        <button>Add New Employee</button>
+        <button>Update Employee</button>
+    </div>
+
+    
+
+    <script>
+        function action(){
+            // console.log("button clicked");
+            let ab = document.getElementById("actionblock");
+            if(ab.style.display == "block"){
+                ab.style.display = "none";
+            } else{
+                ab.style.display = "block";
+            }
+        }
+    </script>
+    
+</body>
+</html>

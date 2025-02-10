@@ -1,0 +1,128 @@
+
+body{
+    display: flex;
+    justify-content: center; 
+    /* align-items: end; */
+    background-color: rgb(207, 249, 255);
+}
+
+main{
+    width: 50vw;
+}
+
+
+/* img{
+    width: 5vw;
+} */
+
+
+.top{
+    text-align: center;
+}
+
+.top h1{
+    color: blue;
+    font-size: 5vh;
+}
+
+.bottom{
+    display: flex;
+}
+
+.left{
+    background-color: blue;
+
+    color: white;
+    font-size: 3vh;
+
+    width: 18vw;
+
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+
+    height: 53vh;
+
+    margin-top: 2vh;
+
+}
+
+.left figure{
+    width: 16vw;
+    text-align: center;
+}
+
+
+
+.left img{
+    width: 13vw;
+    border-radius: 50%;
+}
+
+.right{
+    /* background-color: aqua; */
+
+    display: flex;
+    width: 25vw;
+    margin-left: 2rem;
+}
+
+.right figcaption{
+    font-size: 2.5vh;
+}
+
+
+button{
+    border: 1px solid white;
+    background-color: blue;
+    color: white;
+    width: 8vw;
+    height: 3vh;
+    font-size: 1vh;
+}
+
+
+.box1 , .box2 , .box3 , .box4{
+    background-color: white;
+
+    margin: 1rem;
+
+    height: 19.5vh;
+    width: 13vw;
+
+    
+    padding-top: 5vh;
+    /* padding-right: 1vw; */
+    margin-left: 0vw;
+
+}
+
+.box1{
+    border-bottom: 1vh solid orange;
+    
+}
+
+.box2{
+    border-bottom: 1vh solid blue;
+}
+
+.box3{
+    border-bottom: 1vh solid aqua;
+}
+
+
+.box4{
+    border-bottom: 1vh solid rgb(212, 255, 0);
+}
+
+.boxes img{
+    height: 7vh;
+
+    /* margin-top: 2rem;
+    padding-right: 3rem; */
+}
+
+a{
+    font-size: 1.5vh;
+    color: black;
+}

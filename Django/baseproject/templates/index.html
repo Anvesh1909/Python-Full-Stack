@@ -1,0 +1,46 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <main>
+        <h1>Login Page</h1>
+        <fieldset>
+            <img src="{% static 'images/AI.png' %}" alt="image not set">
+            <legend>Login Form</legend>
+            <form action="" onsubmit="return login()">
+                <table border="2"> 
+                    <tr>
+                        <td>
+                            <input type="text" name="username" id="username" placeholder="Enter username">
+                        </td>
+                        <td>
+                            <span id="usererror"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="password" name="password" id="password" placeholder="Enter password">
+                        </td>
+                        <td>
+                            <span id="passerror"></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="submit" id="submit" value="Login">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <button onclick="clickMe()">Click ME</button>
+        </fieldset>
+        <script src="{% static 'js/script.js' %}"></script>
+    </main>
+</body>
+</html>

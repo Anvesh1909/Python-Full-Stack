@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authentication</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="login">
+            <p class="heading">Login</p>
+            <form>
+                <input type="email" name="email" id="email" class="inputBox" placeholder="Email"><br>
+                <div class="inputGrp">
+                    <input type="password" name="password" id="inputBox" class="password" placeholder="Password">
+                    <img src="hidden.png" alt="" class="passwordImg" id="hideBtn1">
+                </div>
+                
+                <br>
+                <a href="" class="forgot">Forgot password?</a><br>
+                <input type="submit" name="loginBtn" id="loginBtn" class="Btn" value="Login">
+            </form>
+            <p class="already">Don't have an account?&nbsp;<a class="aTag" href="">Signup</a></p>
+
+            <div class="or">
+                <hr>
+                <p>Or</p>
+                <hr>
+            </div>
+            <button class="facebook">
+                <img src="facebook.png" alt=""> 
+                Login with Facebook
+            </button>
+            <br>
+            <button class="google">
+                <img src="google.png" alt=""> 
+                Login with Google
+            </button>
+        </section>
+        <section class="signup">
+            <p class="heading">Signup</p>
+            <form action="" >
+                <input type="email" name="email" id="email" class="inputBox" placeholder="Email"><br>
+
+                <div class="inputGrp">
+                    <input type="password" name="password" id="inputBox" class="password" placeholder="Create password">
+                    <img src="hidden.png" alt="" class="passwordImg" id="hideBtn2">
+                </div>
+
+                <div class="inputGrp">
+                    <input type="password" name="password" id="inputBox" class="password" placeholder="Confirm password">
+                    <img src="hidden.png" alt="" class="passwordImg" id="hideBtn3">
+                </div>
+
+                <input type="submit" name="signupBtn" id="signupBtn" class="Btn" value="Signup">
+            </form>
+            <p class="already">Already have an account?&nbsp;<a href="" class="aTag">Login</a></p>
+            <div class="or">
+                <hr>
+                <p>Or</p>
+                <hr>
+            </div>
+            <button class="facebook">
+                <img src="facebook.png" alt=""> 
+                Login with Facebook
+            </button>
+            <br>
+            <button class="google">
+                <img src="google.png" alt=""> 
+                Login with Google
+            </button>
+        </section>
+    </main>
+
+
+    <script>
+
+        let eye = document.getElementsByClassName('passwordImg');
+
+        // console.log(eye[2].id);
+        // eye[2].addEventListener("click",show);
+        // eye[2].i = 2;
+       
+        for(let i=0; i<eye.length; i++){
+            eye[i].id = i;
+            eye[i].addEventListener("click",show,true);
+        }
+
+        function show(e){
+            let passBtn = document.getElementsByClassName("passwordImg")[e.currentTarget.id];
+            let pass = document.getElementsByClassName("password")[e.currentTarget.id];
+            
+            if(passBtn.getAttribute('src') == "hidden.png"){
+                passBtn.setAttribute('src',"eye.png");
+                pass.setAttribute('type','text');             
+            } else {
+                passBtn.setAttribute('src',"hidden.png");
+                pass.setAttribute('type','password');             
+            }
+            e.preventDefault();
+        }
+        
+    </script>
+</body>
+</html>
