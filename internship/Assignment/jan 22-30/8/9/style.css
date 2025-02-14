@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
-    font-family:'Times New Roman', Times, serif;
+    /* font-family:'Times New Roman', Times, serif; */
+    font-family: "Roboto", serif;
 }
 
 
@@ -51,6 +54,7 @@ main{
 
     display: flex;
     align-items: center;
+
 }
 
 .textBlock{
@@ -58,12 +62,15 @@ main{
 }
 
 .name{
-    font-size: 70px;
-    font-weight: 600;
+    font-size: 50px;
+    font-weight: 800; 
+    color: rgba(0, 0, 0, 0.786);
+    
 }
 
 .occupation{
     font-size: 20px;
+    color: rgba(0, 0, 0, 0.63);
 }
 
 
@@ -77,26 +84,31 @@ main{
 
 .left .block{
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 35px;
     
 }
 
 .left .block img{
-    height: 22px;
+    height: 16px;
     padding-right: 10px;
 }
 
 .left .block .blockHead{
-    font-size: 22px;
-    font-weight: 600;
+    font-size: 17px;
+    font-weight: 900;
     display: flex;
 }
 
 .left .block .blockBody{
     padding-top: 10px;
-    font-size: 14px;
+    font-size: 10px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.733);
 }
 
+.left .block .blockBody li{
+    margin-left: -25px;
+}
 
 /* .left .block .blockBody li{
     margin-bottom: 10px;

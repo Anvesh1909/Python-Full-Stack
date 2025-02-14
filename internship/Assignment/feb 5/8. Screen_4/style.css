@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
 
 *{
     margin: 0;
+    font-family: "Roboto", serif;
 }
 
 
@@ -24,11 +27,11 @@
 }
 
 .details{
-    width: 60vw;
+    width: 61vw;
     height: 80vh;
     background-color: rgb(255, 254, 254);
 
-    border-radius: 2vh;
+    border-radius: 1vh;
     /* position: absolute; */
 
     /* left: 5vh; */
@@ -37,7 +40,7 @@
 
 .left img{
     height: 30vh;
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.397);
     border-radius: 2vh;
     margin-left: 1vw;
     margin-top: 2vh;
@@ -57,15 +60,15 @@
 
     display: flex;
     align-items: center;
-    border-top-left-radius: 2vh;
-    border-top-right-radius: 2vh;
+    border-top-left-radius: 1vh;
+    border-top-right-radius: 1vh;
 
 }
 
 
 .header .headText{
     margin-left: 2vh;
-    width: 56vw;
+    width: 57.5vw;
 
 }
 
@@ -112,8 +115,8 @@
 
 .l label{
     margin-left: 1vw;
-    font-weight: 600;
-    font-size: 3vh;
+    font-weight: 450;
+    font-size: 2.5vh;
     text-align: left;
 }
 
@@ -122,7 +125,9 @@
     height: 9.5vh;
 }
 
-
+.i{
+    font-weight: 300;
+}
 
 .i input{
     width: 29vw;
@@ -131,9 +136,14 @@
     border: none;
     border-bottom: 2px solid blue;
 
-    background-color: rgba(163, 163, 163, 0.423);
+    background-color: rgba(163, 163, 163, 0.164);
 
     padding-left: 1vh;
+}
+
+.i #phNo{
+    width: 28vw;
+    margin-left: 1vw;
 }
 
 
@@ -142,6 +152,11 @@
 table {
     border-collapse: collapse;
 }
+
+/* .right table{
+    border: 1px solid rgba(0, 0, 0, 0.39);
+} */
+
 
 
 .newUser{
@@ -160,16 +175,15 @@ table {
 
     color: white;
     margin-top: 2vh;
-    margin-left: 2vw;
+    margin-left: 2.5vw;
     
 }
 
 
 
 .newUser img{
-    height: 3vh;
+    height: 2vh;
     margin-right: 1vh;
-
 }
 
 
@@ -189,16 +203,16 @@ table {
 
 
 .listtable .d1{
-    width: 5vw;
+    width: 3vw;
 }
 
 .listtable .d2{
-    width: 6vw;
+    width: 5vw;
 }
 
 
 .listtable .d3{
-    width: 15vw;
+    width: 12vw;
 }
 
 .listtable .d4{
@@ -211,7 +225,7 @@ table {
 
 
 .listtable .d6{
-    width: 10vw;
+    width: 19vw;
 }
 
 
@@ -240,7 +254,7 @@ table {
 
 
 .listtable .action img{
-    width: 1.1vw;
+    width: 1.5vw;
     margin-left: 1vh;
 }
 

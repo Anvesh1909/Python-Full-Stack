@@ -67,7 +67,7 @@ main .signup{
 
 
 .inputBox{
-    height: 3vh;
+    height: 4vh;
     width: 20vw;
 
     font-size: 2vh;
@@ -85,7 +85,7 @@ main .signup{
 
 .inputGrp{
     border: 1px solid black;
-    height: 5vh;
+    height: 6vh;
     width: 21vw;
 
     display: flex;
@@ -139,7 +139,7 @@ main .signup{
 
 
 .Btn{
-    height: 5vh;
+    height: 6vh;
     width: 21vw;
     
     font-size: 2vh;
@@ -191,7 +191,7 @@ hr{
 
 .facebook,.google{
 
-    height: 5vh;
+    height: 6vh;
     width: 21vw;
     
     font-size: 2vh;

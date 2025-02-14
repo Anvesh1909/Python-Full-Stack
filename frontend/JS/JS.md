@@ -255,3 +255,93 @@ if(condition){
 }
 ```
 - write a javascript code develop 7 meaningfull usecases using if statements
+---
+## For loop in javascript
+- it is a control statement in javascript 
+- if you want to execute the number of statements in number of times and if our data is in sequence 
+- then we can go with forloop 
+```javascript
+for(start; end; step){
+    
+}
+
+for(let i=startvalue; endCondition; step){
+
+}
+```
+- write a javascript code develop 5 meaningful usecases using forloop
+- write a javascript assume the my 2 arrays are
+    A1 = [1001,1002,1003,1004] 
+    A2 = ['A','B','C']
+    1001 --- A
+    1001 --- B
+    1001 --- C
+    1002 --- A
+    .
+    .
+    .
+    1004 --- C
+
+- write a javascrript code display 10 to 100 table using nexted forloop in javascript code
+
+---
+## While loop
+- if our data is not in sequence or infinte loop then we can use while loop 
+```javascript
+while(condition){
+
+}
+```
+- write a javascript code assume that my array contains some list of prices perform the sum of the list using while loop 
+- write a javascript code read a number from the keyboard and display table using while loop
+
+
+---
+## break statement
+- stop the loop if the condition satisfies
+## continue statement
+- skip the current iteration if the condition satisfiend 
+---
+## javascript interview question
+- what is the diffrence between break and continue statement write this with example with while and for loop
+---
+## Switch Statement:
+- check more than one condition
+```javascript
+let a = window.prompt("Enter a charenct A-D: ")
+switch(a){
+    case "A":
+        document.write("A is selected");
+        break
+    case "B":
+        document.write("B is selected");
+        break
+    case "C":
+        document.write("C is selected");
+        break
+    case "D":
+        document.write("D is selected");
+        break
+    case "E":
+        document.write("E is selected");
+        break
+    default:
+        document.write("better luck next time");
+
+}
+```
+- diffrence between switch and if else if statement
+---
+## An operators in javascript
+- following operators supported in javascript
+    - Arithemetic operators (` + , - , * , / , % , ** , ++ , -- `)
+    - Assignment operators (` = , += , -= , *= , /= , %= , **=  `)
+        - it will also return the value so we can print the value directly or store the value inside another variable
+    - logical operators
+    - comparision operators
+    - spectial operators
+    - bitwise oprators
+    - ternary operators
+---
+- write a javascript code apply and post and pre increment and check the changes in single javascript file
+- write a javascript code as we know assignment operator is meant for memory uitilization develop one meaningfull usecase

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        #block{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button class="dropbtn" onclick="drop()">Drop Down</button>
+    <div id="block">
+        <ul>
+            <li>python</li>
+            <li>java</li>
+            <li>c</li>
+        </ul>
+    </div>
+
+    <script>
+        function drop(){
+            let drop = document.getElementById('block');
+            if(drop.style.display == "block"){
+                drop.style.display = "none";
+            } else{
+                drop.style.display = "block";
+            }
+        }
+    </script>
+</body>
+</html>

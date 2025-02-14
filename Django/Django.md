@@ -223,6 +223,7 @@ in django template is meant for front end development
     - js
 - inside the application no need to change the setting if the static not in application
 - inside templates dir `staticDIR = os.path.join('BASE_DIR','static')`
+- 
 ```python
 STATICFILES_DIRS = [
     BASE_DIR / "static",
@@ -239,6 +240,20 @@ STATICFILES_DIRS = [
 # model
 - model is a class in django
 - the main objective of model is to create one or more than one database tables 
+```python
+from django.db import models
+
+# Create your models here.
+class Students(models.Model):
+    rollNo = models.IntegerField(null=False,unique=True)
+    name = models.CharField(max_length=200)
+    standard = models.IntegerField()
+    presentage = models.FloatField()
+
+
+    def __str__(self):
+        return self.name
+```
 ---
 develop a django application create the model for student which consist of 10 records store the 10 records manually in the data base extract the complete data into the django web page using class component
 
@@ -263,4 +278,44 @@ DATABASES = {
 ```
 
 ## Assignment
-- develop one django application using complete frontend and backend including template and static folder and creat models and extract data from mysql to our django web pageuu
+- develop one django application using complete frontend and backend including template and static folder and creat models and extract data from mysql to our django web page
+
+---
+## working on forms module in django 
+```python
+from django import forms
+
+class StudentsForm(forms.Form):
+    rollNo = forms.IntegerField()
+    name = forms.CharField(max_length=200)
+    standard = forms.IntegerField()
+    presentage = forms.FloatField()
+```
+
+- develop a django application to create the complete employee registration form using django forms 
+
+---
+## Exception handling in django
+- predefiend Exception
+- Custom or user defined exception
+- the main objective of user defiend exception is to display the meaningfull output a end user can easily understand 
+- develop a django application develop a logic in such a way that for custom or userdefined exception by writing try except and finally block
+---
+## cookies in django 
+- cookies are small piece of information created by django webserver 
+- resides in client machine(our own operating system)
+- in django once the cookies are ready client autometically write the cookies
+- in django all cookies are represent in dictionary format 
+### how to set the cookies
+- we can set the cookies using following methods 
+- `set_cookie("cookie_name","cookie_value")`
+### how to get the cookies
+- we can get the cookies using following methods 
+- `request.COOKIES.get("name","Else_default message")`
+### delete cookies
+- `delete_cookies("name")`
+
+---
+- develop a django application for cookies management system
+  - using functional component
+  - using class component

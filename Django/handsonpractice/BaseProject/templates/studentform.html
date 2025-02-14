@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudentForm</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <fieldset>
+            <legend>Student normal Form</legend>
+            <form action="post">
+                {% csrf_token %}
+                {{ data }}
+                <input type="submit" value="Add Student">
+            </form>
+        </fieldset>
+        <br>
+        <br>
+        <fieldset>
+            <legend>Student as_p Form</legend>
+            <form action="post">
+                {% csrf_token %}
+                {{ data.as_p }}
+                <input type="submit" value="Add Student">
+            </form>
+        </fieldset>
+    </main>
+</body>
+</html>

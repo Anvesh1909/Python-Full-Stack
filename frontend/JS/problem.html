@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem Solving</title>
+</head>
+<body>
+    <h1>reverse a number</h1>
+    <!-- <script>
+        // let num = Number(window.prompt("Enter a number: "));
+        // while(num>0){
+        //     let a = num%10;
+        //     rnum = rnum*10 + a;
+        //     // num//=10
+        //     num = parseInt(num/10);
+        // }
+        // document.write("Reverse number = ",rnum);
+    
+        let num = Number(window.prompt("Enter a number: "));
+        function reverseNumber(num){
+            let rnum = 0;
+            while(num>0){
+                let a = num%10;
+                rnum = rnum*10 + a;
+                // num//=10
+                num = parseInt(num/10);
+            }
+            return rnum;
+        }
+        document.write("Reverse number = ",reverseNumber(num));
+    </script> -->
+
+    <h1>Number Palindrome</h1>
+    <!-- <script>
+        let num = Number(window.prompt("Enter a number: "));
+        function isPaliNumber(num){
+            let temp = num;
+            let rnum = 0;
+            while(temp>0){
+                let a = temp%10;
+                rnum = rnum*10 + a;
+                temp = parseInt(temp/10);
+            }
+            // if(rnum == num){
+            //     return true;
+            // } else{
+            //     return false;
+            // }
+            return rnum == num;
+        }
+
+        if(isPaliNumber(num)){
+            document.write(num+" : is a palindrome");
+        } else{
+            document.write(num+" : is a not palindrome");
+        }
+
+    </script> -->
+
+    <h1>String Palindrome</h1>
+    <!-- <script>
+        let s = window.prompt("Enter a sting: ");
+      
+        function pali(s){
+            let i = 0;
+            let j = s.length - 1;
+            while(i<j){
+                if(s[i]!=s[j]){
+                    return false;
+                }
+                i+=1;
+                j-=1;
+            }
+            return true;
+        }
+
+        if(pali(s)){
+            document.write(s," : is a palindrome");
+        } else{
+            document.write(s," : is not a palindrome");
+        }
+
+    </script> -->
+
+    <h1>amstrong number</h1>
+    <!-- <script>
+        // let num = window.prompt("Enter a number: ");
+        // let temp = num;
+        // let c = 0;
+        // while(temp>0){
+        //     c+=1;
+        //     // temp//=10
+        //     temp = parseInt(temp/10);
+        // }
+
+        // // document.write(c);
+        // let sum = 0;
+        // temp = num;
+        // while(temp>0){
+        //     let a = temp%10;
+        //     sum += a**c;
+        //     temp = parseInt(temp/10);
+        // }
+
+        // document.write(sum==num)
+
+        let num = window.prompt("Enter a number: ");
+
+        function armstrong(num){
+            let temp = num;
+            let c = 0;
+            while(temp>0){
+                c+=1;
+                temp = parseInt(temp/10);
+            }
+
+            let sum = 0;
+            temp = num;
+            while(temp>0){
+                let a = temp%10;
+                sum += a**c;
+                temp = parseInt(temp/10);
+            }
+
+            return num==sum;
+        }
+
+        if(armstrong(num)){
+            document.write(num," : it is armstrong number");
+        } else{
+            document.write(num," : it is not armstrong number");
+        }
+
+
+
+    </script> -->
+
+</body>
+</html>
