@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>DOM</legend>
+        <table>
+            <form action="" onsubmit="return check()">
+                <tr>
+                    <td>
+                        <label for="">Username</label>
+                    </td>
+                    <td>
+                        <input type="text" placeholder="Enter Username" name="username" id="username">
+                    </td>
+                </tr>
+                <tr>
+                    <td><input type="submit"></td>
+                </tr>
+            </form>
+        </table>
+    </fieldset>
+
+    <script>
+        function check(){
+            let uname = document.getElementById("username");
+            // document.write("Your username is : ",uname.value);
+
+            uname.value = "Monkey";
+
+            return false;
+        }
+    </script>
+
+
+    <hr>
+    <h1>Add Operation</h1>
+
+    <fieldset>
+        <legend>ADD</legend>
+        <input type="number" name="" id="NoA"> + <input type="number" name="" id="NoB"> <br>
+        <input type="text" name="" id="result"> <br>
+        <input type="submit" value="ADD" name="" id="" onclick="ADDSINGLE()">
+
+    </fieldset>
+
+    <script>
+        function ADDSINGLE(){
+            let a = document.getElementById("NoA").value;
+            let b = document.getElementById("NoB").value;
+            let r = document.getElementById("result");
+
+            r.value = Number(a)+Number(b);
+
+            return false;
+        }
+    </script>
+
+    <hr>
+
+    <h1>Calculator</h1>
+
+    <fieldset>
+        <legend>Calculator</legend>
+        <table>
+            <tr>
+                <td>Enter first Number: </td>
+                <td><input type="number" name="" id="first"></td>
+            </tr>
+            <tr>
+                <td>Enter second Number: </td>
+                <td><input type="number" name="" id="second"></td>
+            </tr>
+            <tr>
+                <td>Result</td>
+                <td><input type="text" name="" id="resultCal"></td>
+            </tr>
+            <tr>
+                <td>Operations</td>
+                <td><button onclick="ADD()">+</button>
+                    <button onclick="SUB()">-</button>
+                    <button onclick="MUL()">*</button>
+                    <button onclick="DIV()">/</button>
+                    <button onclick="EXP()">**</button>
+                    <button onclick="MOD()">%</button></td>
+            </tr>
+        </table>
+    </fieldset>
+
+    <script>
+
+        function ADD(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)+Number(b);
+        }
+
+        function SUB(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)-Number(b);
+        }
+        
+        function MUL(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)*Number(b);
+        }
+        
+        function DIV(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)/Number(b);
+        }
+        
+        function EXP(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)**Number(b);
+        }
+        
+        function MOD(){
+            let a = document.getElementById("first").value;
+            let b = document.getElementById("second").value;
+            let r = document.getElementById("resultCal");
+            r.value = Number(a)%Number(b);
+        }
+
+    </script>
+
+
+    <hr>
+
+    <h1>Client Side validation</h1>
+    <fieldset>
+        <legend>Login Page</legend>
+        <form action="" method="post">
+            <input type="text" name="" id=username"">
+            <input type="password" name="" id="password">
+            <input type="submit" value="">
+        </form>```
+    </fieldset>
+
+</body>
+</html>

@@ -436,5 +436,44 @@
         document.write(a%=b,"<br>");
         // document.write(a**=b,"<br>");
     </script>
+
+    <hr>
+    <h1>Logical Operator</h1>
+    <button onclick="logical()">open</button>
+    <script>
+        function logical(){
+            let username = window.prompt("Enter username: ");
+            let password = window.prompt("Enter Password: ");
+            if(username  =="Anvesh" && password =="Anvesh"){
+                document.write(username+"    "+password+"    Is correct<br>")
+            } else if(username  == "Anvesh" || password == "Anvesh"){
+                document.write(username+"    "+password+"    one of them is incorrect<br>")
+            } else{
+                document.write(username+"    "+password+"    Is incorrect<br>")
+            }
+
+            let a = true;
+            document.write(a+"  without change<br>");
+            a = !a;
+            document.write(a+"  after change");
+
+        }
+    </script>
+
+
+    <hr>
+    <h1>comparision operators</h1>
+    <button onclick="comparision()">open</button>
+
+    <script>
+        function comparision(){
+            let a = Number(window.prompt("Enter the Value of a: "));
+            let b = window.prompt("Enter the Value of b: ");
+            let res1 = a==b;
+            let res2 = a===b;
+            document.write(res1+"  using a==b   "+a+"=="+b+" <br>");
+            document.write(res2+"  using a===b   "+a+"==="+b+"  <br>");
+        }
+    </script>
 </body>
 </html>

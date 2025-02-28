@@ -19,6 +19,7 @@ body{
     /* justify-content: ; */
     align-items: center;
 }
+
 main {
     width: 997.28px;
     height: 1350px;
@@ -29,6 +30,8 @@ main {
 .top {
     border: 1px solid black;
     margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
 
 }
 
@@ -52,7 +55,8 @@ main {
 }
 
 .header .heading {
-    font-size: 46px;
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .header .address {
@@ -75,6 +79,10 @@ main {
     width: 996px;
     border-left: 1px solid black;
     border-right: 1px solid black;
+}
+
+.caseSheetTable{
+    font-family: sans-serif;
 }
 
 .caseSheetTable table {

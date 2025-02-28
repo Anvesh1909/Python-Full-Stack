@@ -29,6 +29,8 @@ main {
 .top {
     /* border: 1px solid black; */
     margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
 
 }
 
@@ -40,7 +42,7 @@ main {
 
 .header img {
     height: 117.76px;
-    margin-left: 25.76px;
+    /* margin-left: 25.76px; */
     margin-top: 11.04px;
 }
 
@@ -52,7 +54,8 @@ main {
 }
 
 .header .heading {
-    font-size: 46px;
+    font-size: 45px;
+    font-weight: 700;
 }
 
 .header .address {
@@ -60,7 +63,7 @@ main {
 }
 
 .details {
-    margin-left: 11.04px;
+    /* margin-left: 11.04px; */
     font-size: 23px;
     font-weight: 600;
     /* margin-right: 14.72px; */
@@ -72,7 +75,7 @@ main {
 
 .space {
     height: 40px;
-    width: 996px;
+    width: 994px;
     border: 1px solid black;
     /* border-right: 1px solid black; */
 
@@ -83,13 +86,22 @@ main {
     margin-top: 5px;
     margin-bottom: 20px;
 
+    font-weight: 500;
+    font-family: sans-serif;
+
+
 }
 
 
 table{
     border-collapse: collapse;
-    font-size: 22px;
+    font-size: 15px;
     margin-bottom: 15px;
+    font-family: sans-serif;
+    /* text-align: start; */
+    align-content: start;
+    width: 994.8px;
+
 }
 
 .row1 .col1{
@@ -99,7 +111,7 @@ table{
 
 .row1 td{
     width: 75px;
-    height: 40px;
+    height: 60px;
     text-align: center;
     
 }
@@ -109,11 +121,15 @@ table{
     text-align: start;
     align-content: start;
     padding-left: 7px;
+    /* height: 60px; */
+
 }
 
 .row2 , .row3{
     text-align: center;
     align-content: center;
+    height: 23px;
+
 }
 
 .row2 .col1{

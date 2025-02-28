@@ -9,5 +9,5 @@ urlpatterns = [
     path('Subject/', views.SubjectView, name='Subject'),
     path('Student/', views.StudentView, name='Student'),
     path('StudentSubjects/', views.StudentSubjectsView, name='StudentSubjects'),
-    path('Library/', views.LibraryFormView, name='Library'),
+    path('Library/', views.LibraryFormView, name='Library')
 ]

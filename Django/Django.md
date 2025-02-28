@@ -319,3 +319,11 @@ class StudentsForm(forms.Form):
 - develop a django application for cookies management system
   - using functional component
   - using class component
+---
+## one to many or many to one relation 
+- develop a django application for one to many or many to one relationships
+- artical - reporter
+---
+# many to many relationship 
+- customer - product
+- develop a django application which satisfies the following relationships

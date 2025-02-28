@@ -1,0 +1,207 @@
+
+
+
+
+
+*{
+    margin: 0;
+}
+
+/* increase 60% */
+
+
+body{
+    width: 1028.8px;
+    height: 1360px;
+    /* padding: 64px 54.4px 94.4px 108.8px; */
+    /* border: 1px solid black; */
+    display: flex;
+    /* justify-content: ; */
+    align-items: center;
+}
+
+main {
+    width: 997.28px;
+    height: 1400px;
+    border: 1px solid black;
+    margin-left: 25px;
+}
+
+.top {
+    /* border: 1px solid black; */
+    border-bottom: none;
+    margin-top: 30px;
+    /* margin-bottom: 10px; */
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.bottom{
+    font-family: sans-serif;
+}
+
+.header {
+    display: flex;
+    height: 143.52px;
+    /* border: 1px solid black; */
+}
+
+.header img {
+    height: 117.76px;
+    margin-left: 25.76px;
+    margin-top: 11.04px;
+}
+
+.header .name {
+    margin-top: 34.5px;
+    margin-left: 22.08px;
+    /* display: block; */
+    text-align: center;
+}
+
+.header .heading {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.header .address {
+    font-size: 20.608px;
+}
+
+.details {
+    margin-left: 11.04px;
+    font-size: 23px;
+    font-weight: 600;
+    /* margin-right: 14.72px; */
+}
+
+.details .text {
+    margin-bottom: 13.8px;
+}
+
+.space {
+    height: 20px;
+    width: 996px;
+    /* border-left: 1px solid black; */
+    /* border-right: 1px solid black; */
+
+    text-align: start;
+    font-size: 18px;
+    font-weight: 600;
+    align-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* font-family: sans-serif; */
+    padding-left: 10px;
+}
+
+
+.space span{
+    border: 3px solid black;
+    padding: 10px;
+}
+
+
+.AUTHORIZATION .bodyText1,.AUTHORIZATION .bodyText2,.AUTHORIZATION .bodyText3{
+    font-size: 17.5px;
+    padding: 10px;
+    line-height: 4px;
+}
+
+
+.AUTHORIZATION .bodyText1{
+    word-spacing: 4px;
+}
+
+
+.AUTHORIZATION .bodyText3{
+    /* word-spacing: 15px; */
+    line-height: 23px;
+    margin-left: 30px;
+}
+
+
+
+.PATIENT .bodyText1{
+    /* display: flex; */
+    padding: 10px;
+    font-size: 17.5px;
+    line-height: 23px;
+    word-spacing: 4px;
+}
+
+.PATIENT .dash{
+    /* height: 30px; */
+    width: 700px;
+    border-bottom: 0.5px solid rgba(138, 138, 138, 0.458);
+}
+
+
+.PATIENT .bodyText3{
+    /* word-spacing: 15px; */
+    line-height: 23px;
+    margin-left: 30px;
+}
+
+.HIGH p{
+    font-size: 17.5px;
+    padding-left: 30px;
+    line-height: 23px;
+}
+
+.HIGH ol{
+    margin-left: 30px;
+    font-size: 20px;
+}
+
+.HIGH li{
+    margin-bottom: 2px;
+}
+
+.HIGH .dic{
+    font-size: 16.9px;
+    margin-bottom: 8px;
+}
+
+
+.HIGH .bodyText3{
+    margin-top: 7px;
+    margin-left: 18px;
+}
+
+
+.foot{
+    margin-left: 20px;
+
+}
+
+
+.foot .NAME{
+    font-size: 17px;
+}
+
+.declaration{
+    border: 1px solid black;
+    font-size: 14.5px;
+    margin-right: 20px;
+    padding: 10px;
+    line-height: 25px;
+}
+
+.box{
+    height: 20px;
+    width: 30px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+
+.sign{
+    text-align: end;
+    margin-top: 30px;
+}
+
+.sign b{
+    border-top: 1px solid #000;
+    /* border-radius: 20px; */
+
+}

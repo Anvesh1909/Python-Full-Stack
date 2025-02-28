@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   
+   
+
+
+    <form action="" method="get">
+        <input type="text" name="search" id="search">
+        <input type="submit" value="search">
+    </form>
+
+
+    <table>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>mobile</th>
+            <th>branch</th>
+        </tr>
+        {% for std in students %}
+        <tr>
+            <td>{{std.id}}</td>
+            <td>{{std.name}}</td>
+            <td>{{std.mobileNo}}</td>
+            <td>{{std.branch}}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    
+
+
+    <h1>Diffrence b/w post and get form</h1>
+    <p>post is used to insert data</p>
+    <p>get is used to retrive data</p>
+
+    
+
+</body>
+</html>

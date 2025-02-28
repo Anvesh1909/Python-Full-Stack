@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>onclick</h1>
+
+    <fieldset>
+        <legend>onclick</legend>
+        <form action="" method="get">
+            <input type="submit" name="" id="" onclick="message()">
+        </form>
+    </fieldset>
+
+    <script>
+        function message(){
+            window.alert("Button clicked");
+        }
+    </script>
+
+    <hr>
+    
+    <h1>onsubmit</h1>
+
+    <fieldset>
+        <legend>onsubmit</legend>
+        <form action="" method="post" onsubmit="return SubmitForm()">
+            <input type="submit" name="" id="">
+        </form>
+    </fieldset>
+
+    <script>
+        function SubmitForm(){
+            window.alert("submit button clicked");
+            return false;
+        }
+    </script>
+
+
+    <hr>
+    <h1>Date object</h1>
+    <button onclick="getDate()">Get Date</button>
+    <pre>
+        - getFullYear() -> to display year between 1970 - 2025
+        - getMonth() -> to display month in 0-11
+        - getDay() -> to display day in 0-6
+        - getHours() -> to display hour in 0-23
+        - getMinutes() -> to display minutes in 0-59
+        - getSecounds() -> to display secounds in 0-59
+    </pre>
+    <script>
+        function getDate(){
+            let d = new Date();
+            document.write("d : ");
+            document.write(d ,"<br><br>");
+
+            document.write("d.getDate() : ");
+            document.write(d.getDate() ,"<br><br>");
+
+            document.write("d.getFullYear() : ");
+            document.write(d.getFullYear() ,"<br><br>");
+
+            document.write("d.getMonth() : ");
+            document.write(d.getMonth() ,"<br><br>");
+
+            document.write("d.getDay() : ");
+            document.write(d.getDay() ,"<br><br>");
+
+            document.write("d.getHours() : ");
+            document.write(d.getHours() ,"<br><br>");
+
+            document.write("d.getMinutes() : ");
+            document.write(d.getMinutes() ,"<br><br>");
+
+            document.write("d.getSeconds() : ");
+            document.write(d.getSeconds() ,"<br><br>");
+        }
+    </script>
+
+
+    <hr>
+    <h1>date formats</h1>
+
+    <button onclick="format()">Formats</button>
+    <script>
+        function format(){
+
+            let d = new Date();
+
+            let date = d.getDate();
+            let month = d.getMonth()+1;
+            let year = d.getFullYear()
+            
+            let res = "dd/mm/yyyy"+date+":"+month+":"+year +"<br>" + "mm/dd/yyyy"+month+":"+date+":"+year 
+            
+            // window.alert(res);
+            document.write(res)
+        }
+    </script>
+
+
+
+    <hr>
+    
+    <h1>palindrome</h1>
+    <button onclick="paliButton()">isPali</button>
+
+    <script>
+        function Pali(s){
+            // let i = 0;
+            // let j = s.length -1;
+            // while(i<j){
+            //     if(s[i]!=s[j]){
+            //         return false;
+            //     }
+            //     i+=1;
+            //     j-=1;
+            // }
+
+            let j = s.length -1;
+
+            for(let i=0 ; i<= parseInt(s.length/2); i++){
+                if(s[i] != s[j-i]){
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        function paliButton(){
+            let s = window.prompt("Enter a String: ")
+            if(Pali(s)){
+                window.alert(s+": is a palindrome");
+            } else{
+                window.alert(s+": is not palindrome");
+            }
+        }
+    </script>
+
+</body>
+</html>

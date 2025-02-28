@@ -1,0 +1,196 @@
+
+
+
+
+
+*{
+    margin: 0;
+}
+
+/* increase 60% */
+
+
+body{
+    width: 1028.8px;
+    height: 1350px;
+    /* padding: 64px 54.4px 94.4px 108.8px; */
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+main {
+    width: 997.28px;
+    height: 1350px;
+    /* border: 1px solid black; */
+    margin-left: 25px;
+}
+
+.top {
+    /* border: 1px solid black; */
+    margin-top: 30px;
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+.header {
+    display: flex;
+    height: 143.52px;
+    /* border: 1px solid black; */
+}
+
+.header img {
+    height: 117.76px;
+    /* margin-left: 25.76px; */
+    margin-top: 11.04px;
+}
+
+.header .name {
+    margin-top: 34.5px;
+    margin-left: 22.08px;
+    /* display: block; */
+    text-align: center;
+}
+
+.header .heading {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.header .address {
+    font-size: 20.608px;
+}
+
+.details {
+    /* margin-left: 11.04px; */
+    font-size: 23px;
+    font-weight: 600;
+    /* margin-right: 14.72px; */
+}
+
+.details .text {
+    margin-bottom: 13.8px;
+}
+
+.space {
+    height: 40px;
+    width: 994px;
+    /* border: 1px solid black; */
+    /* border-right: 1px solid black; */
+
+    text-align: center;
+    align-content: center;
+    font-size: 30px;
+
+    margin-top: 5px;
+    margin-bottom: 20px;
+
+    font-weight: 600;
+    /* font-family: sans-serif; */
+    font-family: 'Times New Roman', Times, serif;
+
+
+}
+
+
+table{
+    border-collapse: collapse;
+    font-size: 15px;
+    margin-bottom: 15px;
+    font-family: sans-serif;
+    /* text-align: start; */
+    align-content: start;
+    width: 994.8px;
+}
+
+
+
+.row1 td{
+    /* width: 75px; */
+    height: 17.5px;
+    text-align: center;
+    
+}
+
+
+.row1 .col1 ,.row2 .col1{
+
+    padding-left: 7px;
+    /* height: 60px; */
+    /* width: 250px; */
+
+}
+
+.drugTable td{
+    width: 32px;
+}
+
+.row2 , .row3{
+    text-align: center;
+    align-content: center;
+    height: 23px;
+
+}
+
+.row2 .col1{
+    /* width: 105px; */
+    height: 17.5px;
+}
+
+.row3 .col1{
+    /* width: 105px; */
+    height: 17.5px;
+}
+
+
+.col2{
+    align-content: start;
+}
+
+
+
+.wbt{
+    border-top: 1px solid white;
+}
+
+.wbb{
+    border-bottom: 1px solid white;
+}
+
+.wbr{
+    border-right: 1px solid white;
+}
+
+.wbl{
+    border-left: 1px solid white;
+}
+
+
+.drugTable2{
+    width: 994.8px;
+    border-bottom: none;
+    margin-bottom: 0;
+}
+
+.drugTable2 .regularPre{
+    width: 426px;
+    text-align: start;
+    align-content: start;
+}
+
+.drugTable2 .regCol2{
+    width: 78px;
+}
+
+.drugTable2 .regularPre span{
+    font-weight: 600;
+    font-size: 19px;
+    border: 2px solid black;
+    padding: 5px 35px;
+}
+
+
+td{
+    text-align: start;
+}

@@ -337,11 +337,26 @@ switch(a){
     - Arithemetic operators (` + , - , * , / , % , ** , ++ , -- `)
     - Assignment operators (` = , += , -= , *= , /= , %= , **=  `)
         - it will also return the value so we can print the value directly or store the value inside another variable
-    - logical operators
-    - comparision operators
-    - spectial operators
-    - bitwise oprators
+    - logical operators (` && , || , ! `)
+    - comparision operators (` > , >= , < , <= , == , != , === , !==`)
+    - special type of operators
+    - bitwise oprators (` & , | , ^ , ~ , << , >> `)
     - ternary operators
 ---
 - write a javascript code apply and post and pre increment and check the changes in single javascript file
 - write a javascript code as we know assignment operator is meant for memory uitilization develop one meaningfull usecase
+- write a javascript code 
+    - a. bitwise and operator
+    - b. bitwise or operator
+    - c. bitwise exlusive or operator
+    - d. birwise not(complement) operator
+    - e. birwise left shift and right shift operator
+
+
+---
+### diffrence between == and === in js
+- `==` is meant for content comparision 
+- `===` is meant for data type content comparision 
+
+---
+

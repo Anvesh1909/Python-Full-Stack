@@ -90,3 +90,8 @@ def deleteCookie(request):
     responce.delete_cookie("name")
     return responce
                  
+
+
+
+
+# many to one or one to many relations

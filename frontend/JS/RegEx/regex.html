@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regular Expresions</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>  
+
+  <main>
+    <h3>Match Ex1</h3>
+    <button onclick="matchPatternI()">Match javascript using i</button>
+
+    <script>
+        function matchPatternI(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A/i);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <hr>
+
+    <button onclick="matchPatternG()">Match javascript using g</button>
+
+    <script>
+        function matchPatternG(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <hr>
+    <h3>Search Ex1</h3>
+    <button onclick="searchPatternI()">Search javascript using i</button>
+
+    <script>
+        function searchPatternI(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.search(/A/i);
+
+            if(res!=-1){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <hr>
+
+    <button onclick="searchPatternG()">Search javascript using g</button>
+
+    <script>
+        function searchPatternG(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.search(/A/g);
+
+            if(res!=-1){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <hr>
+    <h3>[ABC]</h3>
+    <button onclick="ABC()">ABC</button>
+
+    <script>
+        function ABC(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/[ABC]/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <hr>
+    <h3>[^A-Za-z0-9]</h3 >
+    <button onclick="specialChar()">special Charecters</button>
+
+    <script>
+        function specialChar(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/[^A-Za-z0-9]/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <hr>
+
+    <button onclick="emailValidation()">Email</button>
+    <script>
+        function emailValidation(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/[A-z]{1}[a-z]*[0-9]*@gmail.com/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+
+    <hr>
+    
+    <script>
+        document.write(1=="1"); //only checks the content
+        document.write("<br>")
+        document.write(1==="1"); //only checks the content + datatype
+        document.write("<br>")
+        // document.write(1=="1a"); //only checks the content
+        document.write("5"%2); //only checks the content
+    </script>
+
+
+    <hr>
+
+    <h1>predefined classes</h1>
+    <button onclick="preDefinedClass1()">only spaces \s</button>
+
+    <script>
+        function preDefinedClass1(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\s/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="preDefinedClass2()">Except Spaces \S</button>
+
+    <script>
+        function preDefinedClass2(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\S/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="preDefinedClass3()">only digits \d</button>
+
+    <script>
+        function preDefinedClass3(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\d/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <button onclick="preDefinedClass4()">Except Digits \D</button>
+
+    <script>
+        function preDefinedClass4(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\D/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <button onclick="preDefinedClass5()">only Alphanumeric Charecters including _ \w</button>
+
+    <script>
+        function preDefinedClass5(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\w/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="preDefinedClass6()">except (Alphanumeric Charecters) which means special charecters \W</button>
+
+    <script>
+        function preDefinedClass6(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\W/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+
+    <hr>
+
+    <h1>Quantifiers</h1>
+
+    <button onclick="Quantifiers1()">A -> only A's</button>
+
+    <script>
+        function Quantifiers1(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    
+    <button onclick="Quantifiers2()">`A+` -> min one A and more than one A's  (1 or more)</button>
+
+    <script>
+        function Quantifiers2(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A+/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <button onclick="Quantifiers3()">A* -> min zero and more than one A's (0 or more)</button>
+
+    <script>
+        function Quantifiers3(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A*/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="Quantifiers4()">A? -> only one or zero A (0 or 1)</button>
+
+    <script>
+        function Quantifiers4(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A?/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="Quantifiers5()">A{min,max} -> reange number of A's ex: A{2,5}</button>
+
+    <script>
+        function Quantifiers5(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A{2,5}/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <button onclick="Quantifiers6()">A{n} ->  n number of A's ex: A{3}</button>
+
+    <script>
+        function Quantifiers6(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A{3}/g);
+
+            if(res){
+                document.write(res+": pattern found");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    
+    <button onclick="Quantifiers7()">`^A` -> return boolean if start string starts with A</button>
+
+    <script>
+        function Quantifiers7(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/^A/g);
+
+            if(res){
+                document.write(res+": pattern starts with A");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="Quantifiers8()">A$ -> return boolean if start string ends with A</button>
+
+    <script>
+        function Quantifiers8(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/A$/g);
+
+            if(res){
+                document.write(res+": pattern starts with A");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+    <button onclick="Quantifiers9()">. -> return all the string</button>
+
+    <script>
+        function Quantifiers9(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/./g);
+
+            if(res){
+                document.write(res+": pattern starts with A");
+            } else{
+                document.write(res+": pattern not found");
+            }
+        }
+    </script>
+
+
+    <hr>
+    <h3>RegEx for Indian Mobile number</h3>
+    <p>
+        starts with 6/7/8/9 and the 9 digits <br>
+        <b>[6-9]\d{9}</b> or <b>[6-9]{1}\d{9}</b> or <b>[6-9][0-9]{9}</b>
+    </p>
+
+    <button onclick="checkMobileNo()">Mobile Validate pattern</button>
+
+    <script>
+        function checkMobileNo(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/^[6-9]{1}[0-9]{9}$/i);
+
+            if(res){
+                document.write(res+": Mobile number is correct");
+            } else{
+                document.write(res+": Mobile number is not correct");
+            }
+        }
+    </script>
+
+    <h1>RegEx Object for Gmail</h1>
+    <p>
+        start with charecters -> numbers optional -> @gamil.com
+
+        <b>\w[A-Za-z0-9._]@gmail.com</b>
+    </p>
+
+    <button onclick="checkEmail()">Email Validate pattern</button>
+
+    <script>
+        function checkEmail(){
+            var str = window.prompt("Enter the string object: ");
+            var res = str.match(/\w[A-Za-z0-9._]*@(gmail | yahoo | rediff)[.]com/i);
+
+            if(res){
+                document.write(res+": Valid Gmail account");
+            } else{
+                document.write(res+": Gmail account not valid");
+            }
+        }
+    </script>
+
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript</title>
+
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+
+        .dropdown{
+            background-color: red;
+            border: 2px solid white;
+            height: 10vh;
+            width: 15vw;
+
+            font-size: 3vh;
+        }
+
+        .dropdown:hover{
+            background-color: green;
+        }
+
+        #dropmenu{
+
+            display: none;
+            background-color: wheat;
+            color: black;
+
+            height: 30vh;
+            width: 15vw;
+            padding-top: 2vh;
+        }
+
+        
+
+        #dropmenu ul li{
+            list-style-type: none;
+            font-size: 3vh;
+
+            padding-top: 17px;
+            padding-bottom: 17px;
+
+            margin-left: -40px;
+            text-align: center;
+
+        }
+
+        #dropmenu li:hover{
+            background-color: rgb(13, 0, 255);
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- 
+    <select name="gender" id="gender">
+        <option value="LGBTQ+">LGBTQ+</option>
+        <option value="male">male</option>
+        <option value="female">female</option>
+    </select> -->
+
+
+    <main>
+        <button class="dropdown" onclick="dropBtn()"> References</button>
+        <section id="dropmenu"> 
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+                <li>HTTP</li>
+            </ul>
+        </section>
+    </main>
+    
+    <script src="script.js"></script>
+</body>
+</html>
