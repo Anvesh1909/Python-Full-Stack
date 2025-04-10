@@ -25,4 +25,7 @@
 
 ---
 # Client Side validation
-- javascript  supports clientside validation. it is a 
+---
+
+write a javascript code if the end user select the city automatically the state and the contry should be selected
+

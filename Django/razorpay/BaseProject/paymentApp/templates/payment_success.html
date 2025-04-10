@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Successful</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e7ffe7;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .success {
+            color: green;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .details {
+            font-size: 18px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="success">✅ Payment Successful!</div>
+    <div class="details">
+        <p><strong>Name:</strong> {{ transaction.name }}</p>
+        <p><strong>Amount:</strong> ₹{{ transaction.amount|floatformat:2 }}</p>
+        <p><strong>Payment ID:</strong> {{ transaction.payment_id }}</p>
+        <p><strong>Order ID:</strong> {{ transaction.order_id }}</p>
+    </div>
+    <a href="{% url 'transaction_list' %}">View All Transactions</a>
+</body>
+</html>

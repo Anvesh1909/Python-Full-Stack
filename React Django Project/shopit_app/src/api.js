@@ -1,10 +1,28 @@
 import axios from "axios";
+import { jwtDecode } from "jwt-decode";
 
-
-export const BASE_URL = "http://127.0.0.1:8000";
+export const BASE_URL = import.meta.env.VITE_BASE_URL;
 
 const api = axios.create({
-        baseURL : "http://127.0.0.1:8000"
+	baseURL : BASE_URL
 });
 
-export default api;
+api.interceptors.request.use(
+	(config) => {
+		const token = localStorage.getItem("token");
+		if(token){
+			const decoded = jwtDecode(token);
+			const currentTime = Date.now() / 1000;
+			const expiry_date = decoded.exp;
+			if(expiry_date > currentTime){
+				config.headers.Authorization = `Bearer ${token}`;
+			}
+		}
+		return config;
+	},
+	(error) => {
+		return Promise.reject(error);
+	}
+);
+
+export default api; 

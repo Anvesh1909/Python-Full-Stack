@@ -1,0 +1,62 @@
+TABLE A
+
+ID	COLOR
+1	RED
+2	GREEN
+3	BLUE
+4	PURPLE
+
+
+TABLE B
+
+ID	COLOR
+1	RED
+2	GREEN
+3	brown
+4	gray
+
+
+INNER JOIN OUTPUT
+ID	COLOR	ID	COLOR
+1	RED	    1	RED
+2	GREEN	2	GREEN
+
+
+LEFT JOIN OUTPUT
+ID	COLOR	ID	COLOR
+1  	RED	    1	RED
+2	GREEN	2	GREEN
+4	PURPLE	 - 	 - 
+3	BLUE	 - 	 - 
+
+
+LEFT JOIN BUT NO RIGHT TABLE RECORDS 
+ID	COLOR	ID	COLOR
+4	PURPLE	 - 	 - 
+3	BLUE	 - 	 - 
+
+
+RIGHT JOIN 
+ID	COLOR	ID	COLOR
+1	RED	    1	RED
+2	GREEN	2	GREEN
+ - 	 - 	    4	gray
+ - 	 - 	    3	brown
+
+
+RIGHT JOIN BUT NOT COMMON RECORDS 
+ID	COLOR	ID	COLOR
+ - 	 - 	    3	brown
+ - 	 - 	    4	gray
+
+
+FULL JOIN 
+ID	COLOR	ID	COLOR
+1	RED	    1	RED
+2	GREEN	2	GREEN
+3	BLUE	 - 	 - 
+4	PURPLE	 - 	 - 
+ - 	 - 	    4	gray
+ - 	 - 	    3	brown
+
+

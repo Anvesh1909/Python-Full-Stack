@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promises</h1>
+    <pre>
+        - Promises are objects 
+        - the main objective of promisses in to work on asyn operations
+    </pre>
+
+
+
+    <button onclick="ex1()"><h2>Ex1</h2></button>
+    <script>
+        function ex1(){
+            let o = new Promise(function(resolve,reject){
+                if(true){
+                    resolve("Promise is executed successfully");
+                } else{
+                    reject("promise is not executed successfully");
+                }
+            })
+        
+            o.then(function(fromResolve){
+                document.write("promise is :"+fromResolve)
+            }).catch(function(fromReject){
+                document.write("Promise is :"+fromReject)
+            })
+        }
+
+    </script>
+
+
+    <button onclick="ex2()"><h2>Ex2</h2></button>
+    
+    <script>
+        function ex2(){
+            let o = new Promise(function(resolve,reject){
+                if(false){
+                    resolve("Promise is executed successfully");
+                } else{
+                    reject("promise is not executed successfully");
+                }
+            })
+        
+            o.then(function(fromResolve){
+                document.write("promise is :"+fromResolve)
+            }).catch(function(fromReject){
+                document.write("Promise is :"+fromReject)
+            })
+        }
+
+    </script>
+
+    <p>Write a js code develop 3 diffrent logic using promises depading on the sutiustions display the promis executed successfully</p>
+
+    
+
+</body>
+</html>

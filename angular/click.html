@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+
+    <fieldset>
+        <legend>angularjs</legend>
+        <div ng-app="application" ng-controller="Hello">
+            <h1>{{count}}</h1>
+            <button ng-click="increment()">+</button>
+            <button ng-click="decrement()">-</button>
+
+        </div>
+    </fieldset>
+
+    <script>
+        var obj = angular.module("application",[]);
+        obj.controller("Hello",function($scope){
+            $scope.count = 0;
+            $scope.increment = function(){
+                $scope.count +=1;
+            }
+            $scope.decrement = function(){
+                $scope.count -=1;
+            }
+        });
+    </script>
+
+</body>
+</html>

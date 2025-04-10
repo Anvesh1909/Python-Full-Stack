@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment Failed</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe7e7;
+            color: #333;
+            text-align: center;
+            padding: 50px;
+        }
+        .error {
+            color: red;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #0066cc;
+        }
+    </style>
+</head>
+<body>
+    <div class="error">❌ Payment Failed or Signature Verification Error</div>
+    <p>Please try again or contact support if the issue persists.</p>
+    <a href="{% url 'initiate_payment' %}">Go Back to Payment Page</a>
+</body>
+</html>

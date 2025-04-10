@@ -4,12 +4,16 @@ CREATE DATABASE IF NOT EXISTS IHUB;
 
 USE IHUB;
 
+
+
 CREATE TABLE employees(
     empId INT,
     ename VARCHAR(30),
     salary INT,
     city VARCHAR(30)
 );
+
+DROP employees;
 
 SELECT * FROM employees;
 
@@ -49,3 +53,10 @@ TRUNCATE TABLE employees;
 DROP TABLE employees;
 
 DROP DATABASE IHUB;
+
+
+
+-- table, entity, relation 
+-- coloums, fields, attributes
+-- row, tuple, record
+-- database, schema 

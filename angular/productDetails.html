@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+
+    <fieldset>
+        <legend>angularjs</legend>
+        <div ng-app="application" ng-controller="Hello">
+            <input type="text" placeholder="Search">
+            <hr>
+            <table border="3">
+                <tr>
+                    <th>id</th>
+                    <th>name</th>
+                    <th>price</th>
+                </tr>
+                <tr ng-repeat="p in products|filter:obj">
+                    <td>{{p.id}}</td>
+                    <td>{{p.name}}</td>
+                    <td>{{p.price}}</td>
+                </tr>
+            </table>
+
+        </div>
+    </fieldset>
+
+    <script>
+        var obj = angular.module("application",[]);
+        obj.controller("Hello",function($scope){
+            
+            $scope.products = [
+                {"id":1,"name":"shirt","price":500},
+                {"id":2,"name":"pant","price":700},
+                {"id":3,"name":"short","price":400},
+                {"id":4,"name":"t-shirt","price":200},
+                {"id":5,"name":"jacket","price":800},
+            ] 
+        });
+    </script>
+
+</body>
+</html>

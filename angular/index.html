@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+</head>
+<body>
+
+    <fieldset>
+        <legend>angularjs</legend>
+        <div ng-app="application" ng-controller="Hello">
+            <table border="1">
+                <!-- <tr ng-repeat="emp in Employees"> -->
+                <!-- <tr ng-repeat="emp in Employees|orderBy:'Eid'"> -->
+                <tr ng-repeat="emp in Employees|orderBy:'-Eid'">
+                    <td>{{emp.Eid}}</td>
+                    <td>{{emp.name}}</td>
+                </tr>
+            </table>
+        </div>
+    </fieldset>
+
+    <script>
+        var obj = angular.module("application",[])
+        obj.controller("Hello",function($scope){
+            $scope.Employees=[
+                {
+                    "Eid":105,"name":"Anvesh"
+                },
+                {
+                    "Eid":102,"name":"Prerana"
+                },
+                {
+                    "Eid":103,"name":"Surya"
+                },
+                {
+                    "Eid":101,"name":"Satish"
+                }
+            ]
+        })
+    </script>
+
+</body>
+</html>

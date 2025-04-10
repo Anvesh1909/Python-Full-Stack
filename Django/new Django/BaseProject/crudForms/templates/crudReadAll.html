@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Student Crud operations</h1>
+
+    <table border="1">
+
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>age</th>
+            <th>course</th>
+            <th>update</th>
+            <th>delete</th>
+        </tr>
+
+        {% for stu in students %}
+        <tr>
+            <td>{{stu.id}}</td>
+            <td>{{stu.name}}</td>
+            <td>{{stu.age}}</td>
+            <td>{{stu.course}}</td>
+            <td>
+                <a href="{% url "formUpdate" stu.id %}">update</a>
+            </td>
+            <td>
+                <a href="{% url "formDelete" stu.id %}">delete</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+
+    <fieldset>
+        <legend>add Student</legend>
+        <form method="post">
+            {% csrf_token %}
+
+            {{studentForm.as_p}}
+
+            <input type="submit" value="Add">
+
+        </form>
+    </fieldset>
+
+</body>
+</html>

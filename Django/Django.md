@@ -319,11 +319,24 @@ class StudentsForm(forms.Form):
 - develop a django application for cookies management system
   - using functional component
   - using class component
+
 ---
 ## one to many or many to one relation 
 - develop a django application for one to many or many to one relationships
 - artical - reporter
+
 ---
 # many to many relationship 
 - customer - product
 - develop a django application which satisfies the following relationships
+
+---
+# custom routing in django
+- django supports custom routing 
+- it is the process or methodology to navigate from one webpage to another webpage without reloading 
+
+
+---
+
+
+# How to implement static folder i

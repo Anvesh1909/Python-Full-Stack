@@ -1,0 +1,15 @@
+nav bar     login register logout
+
+implement all crud operation
+
+
+task form
+    - task name
+    - discription
+    - date & time automatically selected 
+    - status- not yet started 
+            - completed 
+            - in progress 
+
+
+display list of tasks 

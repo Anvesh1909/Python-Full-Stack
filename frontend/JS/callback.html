@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <pre>
+        callback function can be represent as a function can be used as a paramenter to another function to perform additional functionalities.
+        1. synchronous call back function
+        2. asynchronous call back function    
+    </pre>
+
+
+    <h1>1. synchronous call back function</h1>
+    <button onclick="ex1()"><h1>Ex1</h1></button>
+
+    <script>
+
+        function testCase1(name,callback){
+            document.write("Name of the langauge is : "+name+"<hr>");
+            callback()
+        }
+
+
+        function testCase2(){
+            document.write("used to write client side logic");
+        }
+
+
+        function ex1(){
+            testCase1("javascript",testCase2);
+        }
+
+    </script>
+
+
+    <h1>2. asynchronous call back function</h1>
+
+    <button onclick="ex2()"><h1>Ex1</h1></button>
+
+    <script>
+
+        function testCase1(name,callback){
+            document.write("Name of the langauge is : "+name+"<hr>");
+            callback()
+        }
+
+        
+        function testCase2(){
+            document.write("used to write client side logic");
+        }
+
+
+        function ex2(){
+            testCase1("javascript",testCase2);
+        }
+
+    </script>
+
+<p>write a javascript code develop 2 meaning full usecase for syncronous call back functions</p>
+<p>write a javascript code develop 2 meaning full usecase for asyncronous call back functions</p>
+
+
+</body>
+</html>

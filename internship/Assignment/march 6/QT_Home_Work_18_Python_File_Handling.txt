@@ -1,0 +1,26 @@
+
+1
+Home Work - Day 17 
+Python File Handling 
+The below list contains the solution to the common questions and challenges you can face 
+working on files and directories in Python. 
+ 
+1. Python Check If File Exists  
+2. Python Check File Size  
+3. Python Count Number of Lines in a File  
+4. Python Search for a String in Text Files  
+5. Read Specific Lines from a File in Python  
+6. Delete Lines from a File in Python  
+7. Writing List to a File in Python  
+8. Python List Files in a Directory  
+9. Python Count Number of Files in a Directory  
+10. Python list Files in Directory with Extension txt  
+11. Python Remove/Delete Non-Empty Folder  
+12. Python Get File Creation and Modification DateTime 
+ 
+Exercises on Python File Handling every program should contains with an example: 
+1. Python Search for a String in Text Files. 
+     Given File: 
+    
+  
+ 

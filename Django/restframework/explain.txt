@@ -1,0 +1,65 @@
+rest framework 
+- pip install djangorestframework
+- django-admin startproject school
+- python manage.py migrate
+
+---
+
+json 
+- it is a datastruture which stroes in the from of key and value pair
+- it is like a dictionary in python
+
+dictionary
+{
+    'name' : 'Anvesh',
+    'present' : True,
+    'phone' : None
+}
+
+
+json
+{
+    'name' : 'Anvesh',
+    'present' : true,
+    'phone' :  null
+}
+
+converting from json to dictionary(client to server) and dictionary to json(server to client) 
+we use serializer 
+
+
+---
+we have 5 method
+- get -> retrive the data
+- post -> to add the data
+- delete -> to delete the data
+- put -> update the data
+- patch -> update the data but partially
+
+---
+views all backend logic
+
+-- all ORM commands will return a dictionary (.all . get .filter)
+- we need to convert that to json
+- we need to create serializer
+
+---
+- it is same like create a form in django 
+- 
+
+---
+
+from student.models import Students
+Students.objects.create(name='anvesh',present=True,phoneNo=12345)
+Students.objects.create(name='surya',present=False,phoneNo=12345)
+Students.objects.create(name='ajay',present=True,phoneNo=12345)
+Students.objects.create(name='prerana',present=False,phoneNo=12345)
+history
+
+
+
+{
+    "name": "satish",
+    "present": false,
+    "phoneNo": 182736728
+}

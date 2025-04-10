@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Verified Transactions</h2>
+    <ul>
+        {% for txn in transactions %}
+        <li>
+            {{ txn.name }} - ₹{{ txn.amount|floatformat:2 }} - {{ txn.created_at|date:"d M Y, H:i" }}
+        </li>
+        {% endfor %}
+    </ul>
+
+</body>
+</html>

@@ -237,3 +237,14 @@ SELECT * FROM employees WHERE empId NOT IN (2,6,3);
 ---
 
 
+
+# TCL
+- to manage the transactions within a database
+- transaction ensure data integrity and consistency
+- operations that need to be atomic
+- commit
+- rollback
+- savepoint 
+- release savepoint
+- start transaction 
+- 
