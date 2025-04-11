@@ -1,0 +1,13 @@
+<!-- templates/dashboard.html -->
+{% extends 'base.html' %}
+
+{% block title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="card shadow-sm">
+    <div class="card-body">
+        <h3 class="card-title">Dashboard</h3>
+        <p class="card-text">Hello, <strong>{{ request.user.username }}</strong>! This is your dashboard.</p>
+    </div>
+</div>
+{% endblock %}

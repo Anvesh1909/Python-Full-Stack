@@ -9,4 +9,18 @@
 - what is MVC explain its functionalies in angular js
 - why do we use filter ar pipes in angular js explain with its functionalities
 - what $scope is an object in angular for assigning function and variable 
-- write a angular application to fetch the data in the tabular format using ng-repeat directive                                                                                          
+- write a angular application to fetch the data in the tabular format using ng-repeat directive
+
+
+---
+# Angular 16.2.14
+- Node js should be installed 
+    - https://nodejs.org/en/
+    - node --version
+    - npm --version
+- Type script 
+- html/html5
+- css
+
+---
+

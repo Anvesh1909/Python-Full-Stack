@@ -28,6 +28,9 @@ urlpatterns = [
     path('CRUD/',include('crud.urls')),
 
     # crudforms app urls
-    path('crudForm/',include('crudForms.urls'))
+    path('crudForm/',include('crudForms.urls')),
+
+    # authentication urls
+    path('authentication/', include('authentication.urls'))
   
 ]
