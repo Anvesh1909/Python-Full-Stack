@@ -1,0 +1,30 @@
+[
+    {
+      "name": "Milk Packet",
+      "description": "1-liter full cream milk by Amul.",
+      "category": 1,
+      "brand": "Amul",
+      "price": 55.00,
+      "stock": 100,
+      "is_available": true
+    },
+    {
+      "name": "Potato Chips",
+      "description": "Classic salted potato chips.",
+      "category": 2,
+      "brand": "Lay's",
+      "price": 20.00,
+      "stock": 200,
+      "is_available": true
+    },
+    {
+      "name": "Orange Juice",
+      "description": "Fresh orange juice with no added sugar.",
+      "category": 1,
+      "brand": "Tropicana",
+      "price": 90.00,
+      "stock": 80,
+      "is_available": true
+    }
+  ]
+  

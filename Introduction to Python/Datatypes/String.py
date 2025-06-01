@@ -62,7 +62,7 @@ print(name[-1])
 print(name[-2])
 
 # slicing
-name = "Anvesh Bunny"
+name = "Anvesh Prerana"
 print("farword direction\n")
 print(name[2:])
 print(name[:9])

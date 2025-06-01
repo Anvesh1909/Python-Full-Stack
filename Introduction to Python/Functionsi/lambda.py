@@ -26,3 +26,32 @@ l1 = [1,2,3,4,5]
 l2 = list(map(lambda x:x*100 ,l1))
 print(l1)
 print(l2)
+
+
+from functools import reduce
+
+l = [1,2,3,4,5]
+res = reduce(lambda a,b: a+b, l)
+print(res)
+
+
+
+
+
+
+
+
+
+
+#   a  bc
+# 1 1  2 3 5 8 13...
+a = 1 
+b = 1
+print(a,b,end=" ")
+
+n = 10 
+for i in range(n-2):
+    c = a+b
+    print(c,end=" ")
+    a = b
+    b = c 

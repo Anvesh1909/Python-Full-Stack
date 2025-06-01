@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="container">
+    <div class="row row-cols-md-2 row-cols-lg-4 g-2 g-lg-3">
+        {% if products %}
+            {% for product in products %}
+                <div class="col">
+                    <div class="card" style="width: 18rem;">
+                        <img src="{{product.image.url}}" class="card-img-top image-fluid" alt="{{product.name}}">
+                        <div class="card-body">
+                        <h4 class="card-title">{{product.name}}</h4>
+                        <h6 class="card-subtitle mb-2 text-body-secondary">price: {{product.price}}</h6>
+                        <p class="card-text">
+                            {{product.discription}}
+                        </p>
+                        <p class="card-text">created at: {{product.created_at}}</p>
+                        
+                        <a href="#" class="btn btn-primary">view item</a>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        {% else %}
+            <div class="alert alert-danger" role="alert">
+                no products found
+            </div>
+        {% endif %}
+    </div>
+</div>
+
+{% endblock %}

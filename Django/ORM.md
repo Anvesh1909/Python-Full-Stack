@@ -53,7 +53,7 @@ Employee.objects.get(id=1)
 
 
 ## filert Objects
-Employee.objects.filter(name__startswith ="A)
+Employee.objects.filter(name__startswith ="A")
 
 ## or
 Employee.objects.filter(name__startswith ="A") | Employee.objects.filter(name__startswith ="s )

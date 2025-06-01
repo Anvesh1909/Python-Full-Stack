@@ -68,19 +68,33 @@ for v in d.values():
 print(d.values())
 print(list(d.values()))
 
-for k,v in d.items():
-    print(k,v)
 
-print(d.items())
+x = (10,20)
+print(x) 
+x,y = (10,20)
+print(x,y)
 
-# it will generate in form of tuple for each item
-for i in d.items():
-    print(i)
 
 
 
 d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}
+print(d)
 
+for k,v in d.items():
+    print(k,v)
+print(d.items())
+
+
+# it will generate in form of tuple for each item
+
+for i in d.items():
+    print(i)
+
+
+# deep copy
+d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}
+
+# dc = d
 dc = d.copy()
 print(dc)
 
@@ -107,8 +121,8 @@ print()
 
 d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}
 
-print("get using d['pid']", d["pid"])
-print("using get function", d.get('pid'))
+# print("get using d['pid']", d["pid1"])
+print("using get function", d.get('pid1',-1))
 
 
 d.update({'pid':101})
@@ -130,7 +144,7 @@ print("dessending",d2)
 
 
 # for value sorted
-d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}.values()
+d = {"pid" :'1001', "pname" : "mobile1", "price" : '23000', "company" :"samsung"}.values()
 
 print("initial",d)
 d2 = sorted(d)

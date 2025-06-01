@@ -1,7 +1,7 @@
 def listOfPrime(n):
 
     def Prime(n):
-        for i in range(2,n//2):
+        for i in range(2,int(n**2)+1):
             if n%i== 0:
                 break
         else:
@@ -37,7 +37,7 @@ BubbleSort(11,40,20,2,4,12,42)
 
 def SelectionSort(*L):
 
-    L = list(l)
+    L = list(L)
 
     def min(l):
         m = 0
@@ -52,3 +52,57 @@ def SelectionSort(*L):
         sortedL.append()
 
 
+
+
+
+
+
+
+# 1 1 2 3 5 8 13...
+def fibonicci(n):
+    a = 1
+    b = 1 
+    print(a,b,end=" ")
+    for i in range(n-2):
+        c = a+b
+        print(c ,end=" ")
+        a = b
+        b = c
+
+
+fibonicci(10)
+
+
+def fibo(n):
+    if n<=1:
+        return n
+    return fibo(n-1) + fibo(n-2)
+
+print(fibo(5))
+
+
+
+
+
+
+
+
+
+
+
+t= ([1,2,3,4],7,8,9)
+print(t)
+
+l = t[0].copy()
+print(l)
+
+l.append(5)
+print(l)
+print(t)
+
+
+
+
+t= ([1,2,3,4],1,2,3)
+
+print(t[0][1])

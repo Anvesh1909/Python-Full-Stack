@@ -1,8 +1,7 @@
-d = {"pid" :1001, "pname" : "mobile1", "price" : 23000, "company" :"samsung"}
-print(d)
+d = {"pid" :'1001', "pname" : "mobile1", "price" : '23000', "company" :"samsung"}.values()
 
-# to update dictionary
-d['mdate'] = 2024
-d['expdate'] = 2029
-
-print(d)
+print("initial",d)
+d2 = sorted(d)
+print("assending", d2)
+d2 = sorted(d,reverse=True)
+print("dessending",d2)

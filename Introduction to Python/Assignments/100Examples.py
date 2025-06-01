@@ -676,6 +676,8 @@ print(l)
 course = "Python Full stack with AI"
 institute = "IHub QualityThougt"
 teacher = "Mr Abdhulla sir"
+Girlfriend ="prerana"
+Bestfriend = "Anvesh"
 num = 100
 
 res = f'successfully completed {num+1} programs \n{course} in institute {institute} trained by {teacher}'

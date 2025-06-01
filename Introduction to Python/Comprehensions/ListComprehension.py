@@ -22,7 +22,7 @@ l2 = [ x*x for x in range(1,11)]
 
 
 
-emptyList  = ["" for i in range(0,10)]
+emptyList  = [None for i in range(10)]
 print(emptyList)
 
 
@@ -34,6 +34,7 @@ print(alphabets)
 
 name = "anvesh"
 charecters = [ i for i in name]
+print(charecters)
 
 sentance = '''python supports comprehension methodology. 
 it can be represent as if we are using one or more than one expresion with 
@@ -42,6 +43,9 @@ one or more than one condition then it is said to be comprehension in python
 
 words = [ word for word in sentance.split(" ")]
 
+print(words)
+
+words = sentance.split()
 print(words)
 
 

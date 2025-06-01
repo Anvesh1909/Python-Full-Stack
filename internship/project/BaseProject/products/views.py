@@ -1,9 +1,10 @@
 from django.shortcuts import render
 from products.models import Products
 
-# Create your views here.
-def index(request):
+
+def showProducts(request):
     context = {
-        'products' : Products.objects.all()
+        'products' : Products.objects.all(),
+        'publishedProjects' : Products.objects.filter(is_published=True)
     }
-    return render(request,'index.html',context)
+    return render(request,'showProducts.html',context)

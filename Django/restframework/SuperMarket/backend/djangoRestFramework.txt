@@ -1,0 +1,12 @@
+pip install django
+pip install djangorestframework
+
+
+
+INSTALLED_APPS = [
+
+    'rest_framework',
+]
+
+
+every model has there serializer 

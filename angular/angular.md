@@ -23,4 +23,11 @@
 - css
 
 ---
-
+to install 
+- npm install -g @angular-cli 
+- ng --help
+- ng version
+- ng new mysite
+---
+## file and folder structure 
+- 

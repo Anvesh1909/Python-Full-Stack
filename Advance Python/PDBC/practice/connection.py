@@ -14,4 +14,4 @@ finally:
     if con:
         con.close()
     if cursor:
-        cursor.close
+        cursor.close()
